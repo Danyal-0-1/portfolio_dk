@@ -1,0 +1,51 @@
+---
+title: "Temporal Fusion Transformers for Financial Forecasting"
+slug: "tft-finance"
+kind: "experiment"
+year: "2024"
+role: "Co-lead – modeling and data pipeline"
+themes:
+  - "Temporal Models & Sequences"
+tags:
+  - "time-series"
+  - "temporal-fusion-transformer"
+  - "finance"
+  - "deep-learning"
+heroMetric: "Exploratory forecasting on S&P 500 and related series"
+hook: "Experiments with Temporal Fusion Transformers on financial time-series data."
+featured: false
+order: 5
+---
+
+
+## Project Context
+
+Developed as the final project for a graduate Deep Learning course, this effort applied Temporal Fusion Transformers (TFT) to S&P 500 forecasting using a mixed-frequency pipeline that combined daily price data with lower-frequency macroeconomic indicators. The goal was to investigate whether TFT's attention and gating mechanisms improve multi-horizon forecasting relative to LSTM baselines and to explore interpretability via attention weights. 
+
+## Approach & System Overview
+
+- **Data pipeline:** Collected daily S&P prices (Yahoo Finance) and monthly/quarterly macro indicators (FRED). Designed alignment and imputation to handle mixed frequencies and avoid lookahead bias.
+- **Models implemented:** TFT (primary) and LSTM (baseline) implemented in PyTorch Lightning; training on GPU with time-series cross-validation splits.
+- **Architectural twist:** Experimented with separate embeddings for endogenous (price series) vs. exogenous (macro indicators) inputs to improve feature specialization.
+
+## Key Technical Points
+
+- Carefully handled time alignment: for each forecast horizon we limited use of "known future" features to only those legitimately available at forecast time.
+- Used attention weight visualizations to surface which inputs the model relied on for different horizons (e.g., interest rates for mid-horizon).
+- Logged experiments and results with TensorBoard and structured model checkpoints.
+
+## Results & Takeaways
+
+- TFT provided modest improvements (~5% RMSE improvement over tuned LSTM baselines) in the tested windows; TFT training incurred higher compute/time costs but offered improved interpretability via attention heatmaps.
+- Ablation showed that removing macroeconomic exogenous features increased error noticeably (~~10% in some splits), suggesting their value for multi-horizon forecasting.
+- These results are course-level exploratory findings and illustrate competence with modern temporal architectures and disciplined experimental practice in constrained timelines. :contentReference[oaicite:8]{index=8}
+
+## My Contribution
+
+- Led the data engineering: multi-source ingestion, alignment, and preprocessing.
+- Implemented the TFT and LSTM training loops, evaluation metrics, and ablation experiments.
+- Produced attention visualizations and draft report/presentation for the course.
+
+## Next Steps
+
+- Extend the setup to include higher-frequency real-time indicators, perform more robust cross-validation, and explore physically informed priors for improved generalization in volatile regimes.

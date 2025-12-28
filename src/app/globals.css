@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Dark mode variant: any element under .dark */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin "@tailwindcss/typography";
+
+/* Theme variables */
+@theme {
+  /* Richer sky blue accent */
+  --color-accent: #0ea5e9; /* roughly tailwind sky-500 */
+  --font-sans: system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased
+      bg-slate-50 text-slate-900
+      dark:bg-slate-950 dark:text-slate-50;
+  }
+}
+
+/* Layout helpers & reusable pieces */
+@layer components {
+  .container-page {
+    @apply max-w-5xl mx-auto px-4;
+  }
+
+  @media (min-width: 640px) {
+    .container-page {
+      @apply px-6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-page {
+      @apply px-8;
+    }
+  }
+
+  .section {
+    @apply py-10;
+  }
+
+  @media (min-width: 640px) {
+    .section {
+      @apply py-12;
+    }
+  }
+
+  .section-title {
+    @apply text-xl font-semibold tracking-tight mb-3;
+  }
+
+  @media (min-width: 640px) {
+    .section-title {
+      @apply text-2xl;
+    }
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full
+      border border-accent/40 bg-accent/10
+      text-[0.65rem] uppercase tracking-wide text-accent;
+  }
+}

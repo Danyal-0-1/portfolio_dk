@@ -1,0 +1,39 @@
+---
+title: "SIREN & Diffusion Experiments"
+slug: "siren-diffusion"
+kind: "experiment"
+year: "2024"
+role: "Researcher – model training and evaluation"
+themes:
+  - "AI & Computational Media"
+tags:
+  - "SIREN"
+  - "diffusion-models"
+  - "generative"
+  - "implicit-representations"
+heroMetric: "Small-scale experiments on learned representations and generative quality"
+hook: "Experiments with SIREN-based implicit representations and diffusion models."
+featured: false
+order: 6
+---
+
+
+## Overview
+
+Two parallel experiments: reproducing SIREN implicit neural representations at high resolution and building diffusion-model sketches (DCGAN → Progressive GAN → diffusion) to study latent trajectories and editability. These exercises were part of coursework and self-directed research to gain intuition about continuous signal representations and modern generative priors. :contentReference[oaicite:11]{index=11}
+
+## SIREN (Implicit Representations)
+
+- Implemented sinusoidal representation networks (SIREN) to encode images at 1024×1024 resolution.
+- Explored positional encodings and activation scaling to stabilize training.
+- Observed excellent reconstruction fidelity for textures and high-frequency detail compared to baseline MLPs.
+
+## Diffusion & GAN Experiments
+
+- Re-implemented course assignments: DCGAN, Progressive GAN, and a basic diffusion pipeline on curated datasets.
+- Performed latent interpolations and denoising trajectories to understand mode coverage and sample diversity.
+- Benchmarked training behavior on an A100 and profiled memory/perf trade-offs to inform future model decisions.
+
+## Outcomes
+
+- The experiments improved practical know-how around model instabilities, training curricula for generative models, and how implicit representations can be integrated into larger graphics/vision pipelines (e.g., for texture compression or controllable editing in Happenstance / To Wilt).

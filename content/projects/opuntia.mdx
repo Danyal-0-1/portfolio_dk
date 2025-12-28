@@ -1,0 +1,56 @@
+---
+title: "Opuntia – Solar-Powered Environmental Sensing Station"
+slug: "opuntia"
+kind: "research"
+year: "2024"
+role: "Designer & builder – hardware, sensing, and logging"
+themes:
+  - "Embodied Perception & Sensor Fusion"
+tags:
+  - "IoT"
+  - "ESP32-C3"
+  - "environmental-sensing"
+  - "solar-power"
+heroMetric: "Solar-powered · multi-sensor telemetry"
+hook: "A long-running environmental station for logging and visualizing environmental change."
+featured: false
+order: 3
+---
+
+
+## Problem & Motivation
+
+Long-term ecological sensing and sensor-driven art installations are often constrained by power, communications reliability, and timestamp integrity in outdoor deployments. Opuntia was built to demonstrate that a compact, solar-powered station can reliably collect, backfill, and serve environmental telemetry (temperature, humidity, pressure, soil moisture, UV) to a web dashboard for weeks without human intervention. This project was developed during an IoT course as a practical research prototype. :contentReference[oaicite:3]{index=3}
+
+## Approach & System Overview
+
+Opuntia emphasizes robustness and autonomy rather than experimental novelty: hardware and software are designed around a strict power budget, reliable timekeeping, and outage recovery.
+
+- **Hardware:** ESP32-C3 microcontroller, BME280 (temp/humidity/pressure), soil-moisture probe, UV sensor, solar charging circuit with Li-ion battery and BMS.
+- **Power strategy:** Duty-cycle the MCU and radio (wake, read, transmit, sleep) to minimize energy use; use the RTC to preserve timestamps across deep sleep.
+- **Connectivity & backend:** Wi-Fi to a local router; Node.js/Express API writing to MongoDB for time-series logging and an interactive React + D3 dashboard.
+
+## Key Technical Decisions
+
+- Reliable timestamps are essential: the firmware compares RTC time vs. expected wake intervals and marks/backfills missing samples on reconnect to preserve continuity.
+- Duty cycling and conservative sensor polling (hourly by default) balanced data fidelity and battery life; the power system was sized to survive multi-day cloudy periods.
+- Backend uses a document store (MongoDB) to allow flexible, schema-light time-series logging and easy prototyping of front-end visualizations.
+
+## Evaluation & Results
+
+- **Field test (30 days):** The station recorded hourly readings with no downtime; battery remained in safe operating range through cloudy intervals.
+- **Sensor accuracy:** Compared to a lab reference, the BME280 readings were within acceptable error bounds (within about 5% for humidity/temperature in the test period).
+- **Web access:** Dashboard successfully retrieved hourly updates and supported historical queries and visualization.
+
+(High-level results summarized from project notes and course write-up.) :contentReference[oaicite:4]{index=4}
+
+## My Contribution
+
+- Designed the power system and duty-cycling strategy for reliable off-grid operation.
+- Wrote ESP32 firmware (Arduino/C++) to handle sensor reads, RTC-based wake/sleep, and robust transmission with reconnect/backfill logic.
+- Built the backend API and the React/D3 dashboard for live and historical visualization.
+- Led the field deployment and validation tests.
+
+## Outcomes & Next Steps
+
+- Opuntia demonstrates practical autonomy for sensor-driven installations and ecological art. Next steps include adding OTA updates, encrypted telemetry, and optional cellular failover for remote deployments.

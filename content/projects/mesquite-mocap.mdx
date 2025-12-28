@@ -1,0 +1,64 @@
+---
+title: "Mesquite MoCap – Open-Source Wearable 6-DoF Motion Capture"
+slug: "mesquite-mocap"
+kind: "research"
+year: "2024–2025"
+role: "Co-developer – firmware, sensor fusion, benchmarking"
+themes:
+  - "Embodied Perception & Sensor Fusion"
+  - "Low-Cost Motion Capture & XR Tools"
+tags:
+  - "sensor-fusion"
+  - "embedded-systems"
+  - "motion-capture"
+  - "ESP32-C3"
+  - "XR"
+heroMetric: "~32 FPS • <15 ms latency • ~99.7% packet delivery"
+hook: "Open-source, wireless full-body 6-DoF motion capture using low-cost IMU nodes."
+featured: true
+order: 1
+---
+
+## Problem & Context
+
+Commercial motion-capture systems such as OptiTrack are accurate but expensive and bound to controlled
+optical setups. For XR, embodied interaction, and robotics research, we wanted a low-cost wearable
+alternative that could run in ordinary spaces and survive packet loss, drift, and network noise.
+
+## Approach & System Overview
+
+Mesquite MoCap is a full-body suit built from 15 wireless ESP32-C3 IMU nodes worn across the body.
+Each node streams timestamped inertial data over Wi-Fi to a receiver, which fuses orientations and
+exports BVH skeletons for visualization and downstream use.
+
+At a high level:
+
+- **Hardware:** 15 ESP32-C3 IMU modules (accelerometer + gyroscope) mounted on straps.
+- **Firmware:** Arduino-based code for synchronized streaming, buffering, and retry logic.
+- **Host pipeline:** Calibration, sensor fusion, inverse kinematics, and BVH export.
+- **Visualization:** Real-time 3D skeleton in Unity / WebXR.
+
+## Robustness & Evaluation
+
+We tuned the sensor-fusion and networking stack to:
+
+- Sustain roughly 32 FPS streaming from all 15 nodes.
+- Keep end-to-end latency under 15 ms in typical lab conditions.
+- Maintain packet delivery around 99–100% over Wi-Fi.
+
+We benchmarked the system against an OptiTrack setup, observing joint-angle error in a small-degree
+range on key joints for walking and running sequences.
+
+## My Contribution
+
+- Co-developed and debugged the ESP32-C3 firmware, including synchronization and buffering.
+- Implemented parts of the sensor-fusion stack and helped tune filters and calibration procedures.
+- Worked on the BVH export path and host-side tools used for benchmarking and visualization.
+- Helped design experiments and interpret results for a paper now under review.
+
+## Outcomes & Next Steps
+
+Mesquite demonstrates that affordable, open-source IMU-based mocap can approach optical quality under
+real-time constraints. Future work includes integrating additional sensing modalities (e.g., depth
+cameras, environmental sensors) and using the suit as a platform for embodied AI and human–robot
+interaction studies.

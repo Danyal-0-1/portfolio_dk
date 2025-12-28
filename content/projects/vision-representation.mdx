@@ -1,0 +1,39 @@
+---
+title: "Vision & Representation Experiments"
+slug: "vision-representation"
+kind: "experiment"
+year: "2024"
+role: "Researcher – model design and analysis"
+themes:
+  - "Vision & Representation"
+tags:
+  - "efficientnet"
+  - "vision-transformer"
+  - "resnet"
+  - "representation-learning"
+heroMetric: "Comparative experiments across modern vision backbones"
+hook: "Course and lab experiments exploring modern vision backbones and representation learning."
+featured: false
+order: 7
+---
+
+
+## Overview
+
+A set of supervised and self-supervised style experiments executed as part of a deep learning curriculum and self-directed study. The goal was to compare architectures (EfficientNet, ViT, custom ResNet) under controlled augmentation and compute budgets, and to explore interpretability methods (Grad-CAM) and perceptual loss variants for downstream image tasks. :contentReference[oaicite:9]{index=9}
+
+## Representative Experiments
+
+- **EfficientNetV2 fine-tuning:** Fine-tuned on Oxford Flowers-102 with custom augmentations and multi-GPU training; validated class-balance strategies and augmentation schedules.
+- **ViT & Representational Probes:** Trained ViT-B32 on a domain-specific PV-fault dataset, compared head-only vs full-finetune methods.
+- **ResNet-36 & custom activations:** Implemented a ResNet-36 from scratch, experimented with an analytic custom activation and benchmarked against ReLU baselines.
+- **Interpretability:** Generated Grad-CAM maps to inspect class discriminative regions and evaluate whether features align with human-perceptible cues.
+
+## Outcomes
+
+- Demonstrated practical knowledge of end-to-end vision pipelines (dataset curation → augmentation → multi-GPU training → evaluation).
+- Gained fluency in model selection trade-offs, fine-tuning strategies, and basic interpretability techniques useful for downstream research and production prototypes. :contentReference[oaicite:10]{index=10}
+
+## Notes
+
+These experiments are compact and reproducible; they serve as methodological building blocks for larger perception projects (e.g., Mesquite MoCap visual fusion, Happenstance).
