@@ -7,13 +7,10 @@ import clsx from "clsx";
 import { ThemeToggle } from "./theme-toggle";
 
 const navItems = [
-  { href: "/research", label: "Research Systems" },
-  { href: "/installations", label: "Installations & Media" },
-  { href: "/experiments", label: "Experiments" },
-  { href: "/writing", label: "Writing & Talks" },
+  { href: "/projects", label: "Projects" },
+  { href: "/publications", label: "Publications" },
   { href: "/teaching", label: "Teaching" },
   { href: "/about", label: "About" },
-  { href: "/cv", label: "CV & Contact" },
 ];
 
 export function SiteHeader() {

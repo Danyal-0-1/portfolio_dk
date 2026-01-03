@@ -56,6 +56,39 @@ export default function AboutPage() {
           robust action and interaction outside controlled lab conditions.
         </p>
       </section>
+
+      <section id="cv-contact" className="section pt-0 space-y-4">
+        <h2 className="section-title">CV &amp; Contact</h2>
+        <div className="space-y-3">
+          <h3 className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+            Download CV
+          </h3>
+          <a
+            href="/Danyal_Khorami_CV.pdf"
+            className="inline-flex items-center rounded-full bg-accent text-white px-4 py-2 text-xs font-medium hover:opacity-90"
+          >
+            Download PDF
+          </a>
+          <p className="text-xs text-neutral-600 dark:text-neutral-300 max-w-2xl">
+            The PDF includes full lists of coursework, exhibitions, technical skills,
+            and fellowships.
+          </p>
+        </div>
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+            Contact
+          </h3>
+          <p className="text-sm">
+            Email:{" "}
+            <a
+              href="mailto:dkhorami@asu.edu"
+              className="text-accent hover:underline"
+            >
+              dkhorami@asu.edu
+            </a>
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

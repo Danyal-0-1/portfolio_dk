@@ -53,13 +53,13 @@ export default function HomePage() {
               {/* CTAs */}
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="/research"
+                  href="/projects"
                   className="inline-flex items-center rounded-full bg-accent text-white px-4 py-2 text-xs font-medium hover:opacity-90"
                 >
-                  View Research Systems
+                  View Projects
                 </a>
                 <a
-                  href="/cv"
+                  href="/about#cv-contact"
                   className="inline-flex items-center rounded-full border border-slate-300 dark:border-slate-700 px-4 py-2 text-xs font-medium hover:border-accent/70"
                 >
                   CV &amp; Contact
@@ -114,8 +114,8 @@ export default function HomePage() {
       <section className="section pt-0">
         <div className="flex items-center justify-between mb-3">
           <h2 className="section-title mb-0">Featured Projects</h2>
-          <a href="/research" className="text-xs text-accent hover:underline">
-            View all research systems →
+          <a href="/projects" className="text-xs text-accent hover:underline">
+            View all projects
           </a>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
