@@ -1,3 +1,5 @@
+import type { ComponentType } from "react";
+
 export type ProjectLinkMap = {
   github?: string;
   paper?: string;
@@ -18,7 +20,7 @@ type IconProps = {
   className?: string;
 };
 
-type IconComponent = (props: IconProps) => JSX.Element;
+type IconComponent = ComponentType<IconProps>;
 
 const linkDefinitions: Array<{
   key: keyof ProjectLinkMap;
