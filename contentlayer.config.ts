@@ -20,6 +20,7 @@ export const Project = defineDocumentType(() => ({
     hook: { type: "string", required: false },
     featured: { type: "boolean", default: false },
     order: { type: "string", required: false },
+    links: { type: "json", required: false },
   },
   computedFields: {
     url: {
