@@ -32,8 +32,6 @@ export default function HomePage() {
                   Danyal Khorami 
                 </h1>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-                  MFA Candidate, Interdisciplinary Media Arts · Arizona State
-                  University (expected 2026)
                 </p>
               </div>
 
