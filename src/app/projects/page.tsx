@@ -5,8 +5,12 @@ export default function ProjectsPage() {
   const researchProjects = getProjectsByKind("research");
   const installations = getProjectsByKind("installation");
   const experiments = getProjectsByKind("experiment");
-  const projectCount =
-    researchProjects.length + installations.length + experiments.length;
+  const counts = {
+    total: researchProjects.length + installations.length + experiments.length,
+    research: researchProjects.length,
+    installation: installations.length,
+    experiment: experiments.length,
+  };
 
   return (
     <div className="space-y-6">
@@ -18,9 +22,12 @@ export default function ProjectsPage() {
           Research systems, installations, and experiments spanning embodied
           perception, computational media, and AI-driven tools.
         </p>
-        <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
-          Projects count: {projectCount}
-        </p>
+        {process.env.NODE_ENV !== "production" && (
+          <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+            Projects debug: total {counts.total} · research {counts.research} ·
+            installation {counts.installation} · experiment {counts.experiment}
+          </p>
+        )}
         <div className="mt-4 flex flex-wrap gap-2 text-xs">
           <a
             href="#research-systems"
