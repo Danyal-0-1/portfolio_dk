@@ -3,24 +3,29 @@ export default function PublicationsPage() {
     <div className="space-y-6">
       <section className="section pb-2">
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">
-          Publications
+          Selected Publications
         </h1>
-        <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-2xl">
-          Selected publications, theses, and talks at the intersection of media
-          theory, computational systems, and embodied perception.
-        </p>
       </section>
 
-      <section className="section pt-0">
-        <h2 className="section-title">Publications &amp; Manuscripts</h2>
-        <ul className="list-disc pl-4 text-sm space-y-2">
-          <li>
-            Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable,
-            Open-Source, Networked IMU Hardware and WebXR. (co-author, manuscript
-            under review).
-          </li>
-        </ul>
-      </section>
+<section className="section pt-0">
+  <h2 className="section-title">Publications &amp; Manuscripts</h2>
+
+  <ul className="list-disc pl-4 text-sm space-y-2">
+    <li>
+      <a
+        href="https://arxiv.org/abs/2512.22690"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline underline-offset-2 hover:opacity-80"
+      >
+        Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable,
+        Open-Source, Networked IMU Hardware and WebXR
+      </a>
+      . (co-author, submitted to IEEE Journal of IoT; arXiv:2512.22690).
+    </li>
+  </ul>
+</section>
+
 
       <section className="section pt-0">
         <h2 className="section-title">Theses &amp; Long-form</h2>
