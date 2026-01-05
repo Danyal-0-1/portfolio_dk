@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { allProjects } from "contentlayer/generated";
 import { getProjectBySlug } from "@/lib/projects";
 import { MDXContent } from "@/components/mdx-content";
+import { ProjectLinks, type ProjectLinkMap } from "@/components/project-links";
 
 // for generateStaticParams – still fine to use allProjects here
 export async function generateStaticParams() {
@@ -24,6 +25,8 @@ export default async function ProjectPage({
     notFound();
   }
 
+  const links = (project as { links?: ProjectLinkMap }).links;
+
   return (
     <article className="prose prose-sm sm:prose-base dark:prose-invert max-w-none">
       <header className="mb-6">
@@ -34,17 +37,22 @@ export default async function ProjectPage({
             ? "Installation"
             : "Experiment"}
         </span>
-        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">
-          {project.title}
-        </h1>
-        <p className="text-xs text-neutral-500 dark:text-neutral-400">
-          {project.year} &middot; {project.role}
-        </p>
-        {project.heroMetric && (
-          <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-300">
-            Key metric: {project.heroMetric}
-          </p>
-        )}
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+          <div className="min-w-0">
+            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">
+              {project.title}
+            </h1>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">
+              {project.year} &middot; {project.role}
+            </p>
+            {project.heroMetric && (
+              <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-300">
+                Key metric: {project.heroMetric}
+              </p>
+            )}
+          </div>
+          <ProjectLinks links={links} className="sm:justify-end" />
+        </div>
         {project.hook && (
           <p className="mt-3 text-sm text-neutral-700 dark:text-neutral-200 max-w-2xl">
             {project.hook}
