@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ParticleBackground } from "@/components/ParticleBackground";
 
 export const metadata: Metadata = {
   title: "Danyal Khorami – Embodied Perception & Computational Media",
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <ThemeProvider>
+          <ParticleBackground />
           <div className="min-h-screen flex flex-col">
             <SiteHeader />
             <main className="flex-1">
