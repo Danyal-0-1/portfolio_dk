@@ -1,5 +1,47 @@
 {
   "cacheItemsMap": {
+    "projects/happenstance-avatar.mdx": {
+      "document": {
+        "title": "Happenstance - Image-to-Avatar Pipeline for Virtual Worlds (In Progress)",
+        "slug": "happenstance-avatar",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Researcher / Developer",
+        "themes": [
+          "Embodied AI",
+          "Virtual Worlds",
+          "Surveillance & Identity"
+        ],
+        "tags": [
+          "PiFUHD",
+          "3D Reconstruction",
+          "Rigging",
+          "Mixamo",
+          "Unreal/Unity"
+        ],
+        "heroMetric": "Image -> PiFUHD mesh -> Mixamo rig -> game-engine ready",
+        "hook": "Single-photo -> rigged 3D character pipeline for rapid import into virtual environments.",
+        "featured": false,
+        "order": 30,
+        "body": {
+          "raw": "\n## Overview\n\nAn in-progress pipeline that turns a single human photograph into a rigged, animation-ready avatar for virtual worlds.\n\n## Pipeline\n\n- Built a pipeline that converts a single human photograph into a high-resolution 3D character.\n- Used Facebook Research PiFUHD (pixel-aligned implicit function) for image-based human digitization.\n- Rigged the extracted meshes using Mixamo to generate full armatures and animation readiness.\n- Produced several animations; characters import cleanly into game engines and virtual environments.\n- Goal: a faster, repeatable end-to-end workflow where users can input an image and receive a rigged, animation-ready avatar.\n\n## Media (coming soon)\n\nImages and short clips will be added once the pipeline outputs are finalized.\n",
+          "code": "var Component=(()=>{var g=Object.create;var t=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var v=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var a in e)t(n,a,{get:e[a],enumerable:!0})},l=(n,e,a,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of p(e))!f.call(n,r)&&r!==a&&t(n,r,{get:()=>e[r],enumerable:!(o=m(e,r))||o.enumerable});return n};var D=(n,e,a)=>(a=n!=null?g(u(n)):{},l(e||!n||!n.__esModule?t(a,\"default\",{value:n,enumerable:!0}):a,n)),y=n=>l(t({},\"__esModule\",{value:!0}),n);var d=v((_,s)=>{s.exports=_jsx_runtime});var w={};x(w,{default:()=>h,frontmatter:()=>M});var i=D(d()),M={title:\"Happenstance - Image-to-Avatar Pipeline for Virtual Worlds (In Progress)\",slug:\"happenstance-avatar\",kind:\"installation\",year:\"2025\",role:\"Researcher / Developer\",themes:[\"Embodied AI\",\"Virtual Worlds\",\"Surveillance & Identity\"],tags:[\"PiFUHD\",\"3D Reconstruction\",\"Rigging\",\"Mixamo\",\"Unreal/Unity\"],hook:\"Single-photo -> rigged 3D character pipeline for rapid import into virtual environments.\",heroMetric:\"Image -> PiFUHD mesh -> Mixamo rig -> game-engine ready\",featured:!1,order:30};function c(n){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...n.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,i.jsx)(e.p,{children:\"An in-progress pipeline that turns a single human photograph into a rigged, animation-ready avatar for virtual worlds.\"}),`\n`,(0,i.jsx)(e.h2,{children:\"Pipeline\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"Built a pipeline that converts a single human photograph into a high-resolution 3D character.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Used Facebook Research PiFUHD (pixel-aligned implicit function) for image-based human digitization.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Rigged the extracted meshes using Mixamo to generate full armatures and animation readiness.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Produced several animations; characters import cleanly into game engines and virtual environments.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Goal: a faster, repeatable end-to-end workflow where users can input an image and receive a rigged, animation-ready avatar.\"}),`\n`]}),`\n`,(0,i.jsx)(e.h2,{children:\"Media (coming soon)\"}),`\n`,(0,i.jsx)(e.p,{children:\"Images and short clips will be added once the pipeline outputs are finalized.\"})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(c,{...n})}):c(n)}return y(w);})();\n;return Component;"
+        },
+        "_id": "projects/happenstance-avatar.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/happenstance-avatar.mdx",
+          "sourceFileName": "happenstance-avatar.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/happenstance-avatar"
+        },
+        "type": "Project",
+        "url": "/projects/happenstance-avatar"
+      },
+      "documentHash": "1767649571304",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
     "projects/mesquite-mocap.mdx": {
       "document": {
         "title": "Mesquite MoCap – Open-Source Wearable 6-DoF Motion Capture",
@@ -89,6 +131,47 @@
         "url": "/projects/multi-phone-3d-rig"
       },
       "documentHash": "1767592068020",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/observation-apparatus.mdx": {
+      "document": {
+        "title": "Observation Apparatus - Satellite & Street-Level Vision Study (In Progress)",
+        "slug": "observation-apparatus",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Artist / Researcher",
+        "themes": [
+          "Surveillance",
+          "Image Theory",
+          "Public Space"
+        ],
+        "tags": [
+          "Satellite Imagery",
+          "Street View",
+          "Observation",
+          "Visual Culture"
+        ],
+        "heroMetric": "Satellite + Street View -> comparative visual analysis",
+        "hook": "A compact study using satellite imagery + Google Street View to examine how observational systems construct surveillance.",
+        "featured": false,
+        "order": 31,
+        "body": {
+          "raw": "\n## Overview\n\nAn in-progress study combining satellite imagery and street-level imagery to examine how observational systems construct surveillance.\n\n## Notes\n\n- Combined satellite imagery and street-level imagery (Google Street View) to explore how observational apparatuses operate as surveillance systems.\n- Focus: how scale, vantage point, and infrastructure shape what becomes legible and governable.\n- This will be presented as an exhibition piece; images will be added later.\n\n## Media (coming soon)\n\nExhibition images and documentation will be added after the first presentation.\n",
+          "code": "var Component=(()=>{var h=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var i in e)r(t,i,{get:e[i],enumerable:!0})},l=(t,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of p(e))!v.call(t,a)&&a!==i&&r(t,a,{get:()=>e[a],enumerable:!(s=m(e,a))||s.enumerable});return t};var w=(t,e,i)=>(i=t!=null?h(g(t)):{},l(e||!t||!t.__esModule?r(i,\"default\",{value:t,enumerable:!0}):i,t)),x=t=>l(r({},\"__esModule\",{value:!0}),t);var c=b((V,o)=>{o.exports=_jsx_runtime});var f={};y(f,{default:()=>u,frontmatter:()=>S});var n=w(c()),S={title:\"Observation Apparatus - Satellite & Street-Level Vision Study (In Progress)\",slug:\"observation-apparatus\",kind:\"installation\",year:\"2025\",role:\"Artist / Researcher\",themes:[\"Surveillance\",\"Image Theory\",\"Public Space\"],tags:[\"Satellite Imagery\",\"Street View\",\"Observation\",\"Visual Culture\"],hook:\"A compact study using satellite imagery + Google Street View to examine how observational systems construct surveillance.\",heroMetric:\"Satellite + Street View -> comparative visual analysis\",featured:!1,order:31};function d(t){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,n.jsx)(e.p,{children:\"An in-progress study combining satellite imagery and street-level imagery to examine how observational systems construct surveillance.\"}),`\n`,(0,n.jsx)(e.h2,{children:\"Notes\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Combined satellite imagery and street-level imagery (Google Street View) to explore how observational apparatuses operate as surveillance systems.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Focus: how scale, vantage point, and infrastructure shape what becomes legible and governable.\"}),`\n`,(0,n.jsx)(e.li,{children:\"This will be presented as an exhibition piece; images will be added later.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Media (coming soon)\"}),`\n`,(0,n.jsx)(e.p,{children:\"Exhibition images and documentation will be added after the first presentation.\"})]})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return x(f);})();\n;return Component;"
+        },
+        "_id": "projects/observation-apparatus.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/observation-apparatus.mdx",
+          "sourceFileName": "observation-apparatus.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/observation-apparatus"
+        },
+        "type": "Project",
+        "url": "/projects/observation-apparatus"
+      },
+      "documentHash": "1767649687659",
       "hasWarnings": false,
       "documentTypeName": "Project"
     },
