@@ -1,7 +1,7 @@
 "use client";
 
-import Particles from "@tsparticles/react";
-import type { Engine } from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import type { Container, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { useTheme } from "next-themes";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -12,6 +12,7 @@ const prefersReducedMotionQuery = "(prefers-reduced-motion: reduce)";
 export function ParticleBackground() {
   const { resolvedTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
+  const [ready, setReady] = useState(false);
   const [fallbackIsDark, setFallbackIsDark] = useState<boolean | null>(null);
   const [reduceMotion, setReduceMotion] = useState(true);
 
@@ -73,11 +74,15 @@ export function ParticleBackground() {
       ? false
       : fallbackIsDark;
 
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => setReady(true));
   }, []);
 
-  const options = useMemo(() => {
+  const particlesLoaded = useCallback(async (_container?: Container) => {}, []);
+
+  const options: ISourceOptions = useMemo(() => {
     const color = isDark ? "#ffffff" : "#000000";
 
     return {
@@ -104,19 +109,24 @@ export function ParticleBackground() {
         events: {
           onHover: { enable: false },
           onClick: { enable: false },
-          resize: true,
+          resize: { enable: true },
         },
       },
     };
   }, [isDark]);
 
-  if (!isMounted || reduceMotion || isDark === null) {
+  if (!isMounted || reduceMotion || isDark === null || !ready) {
     return null;
   }
 
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none">
-      <Particles className="h-full w-full" init={particlesInit} options={options} />
+      <Particles
+        id="tsparticles-bg"
+        className="h-full w-full"
+        options={options}
+        particlesLoaded={particlesLoaded}
+      />
     </div>
   );
 }
