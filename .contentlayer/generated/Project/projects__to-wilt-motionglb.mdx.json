@@ -1,0 +1,39 @@
+{
+  "title": "To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB",
+  "slug": "to-wilt-motionglb",
+  "kind": "installation",
+  "year": "2025",
+  "role": "Artist / Researcher (data capture + pipeline)",
+  "themes": [
+    "AI & Computational Media"
+  ],
+  "tags": [
+    "time-lapse",
+    "motionglb",
+    "dataset",
+    "temporal-modeling"
+  ],
+  "heroMetric": "22k+ images | 4 synchronized Sony cameras | 7 days",
+  "hook": "Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.",
+  "featured": false,
+  "order": 5,
+  "links": {
+    "github": "https://github.com/tejaswigowda/motionGLB",
+    "type": "ProjectLinks",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "\n## Overview\n\nA focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\n\n## Pipeline\n\n- Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\n- Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\n- Automated background removal in Photoshop via scripting, isolating the rose across frames.\n- Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\n",
+    "code": "var Component=(()=>{var h=Object.create;var a=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},s=(t,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of p(e))!f.call(t,n)&&n!==i&&a(t,n,{get:()=>e[n],enumerable:!(r=u(e,n))||r.enumerable});return t};var M=(t,e,i)=>(i=t!=null?h(g(t)):{},s(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),x=t=>s(a({},\"__esModule\",{value:!0}),t);var d=w((_,l)=>{l.exports=_jsx_runtime});var b={};y(b,{default:()=>c,frontmatter:()=>k});var o=M(d()),k={title:\"To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB\",slug:\"to-wilt-motionglb\",kind:\"installation\",year:\"2025\",role:\"Artist / Researcher (data capture + pipeline)\",themes:[\"AI & Computational Media\"],tags:[\"time-lapse\",\"motionglb\",\"dataset\",\"temporal-modeling\"],hook:\"Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.\",heroMetric:\"22k+ images | 4 synchronized Sony cameras | 7 days\",featured:!1,order:5,links:{github:\"https://github.com/tejaswigowda/motionGLB\"}};function m(t){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,o.jsx)(e.p,{children:\"A focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\"}),`\n`,(0,o.jsx)(e.h2,{children:\"Pipeline\"}),`\n`,(0,o.jsxs)(e.ul,{children:[`\n`,(0,o.jsx)(e.li,{children:\"Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Automated background removal in Photoshop via scripting, isolating the rose across frames.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\"}),`\n`]})]})}function c(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,{...t,children:(0,o.jsx)(m,{...t})}):m(t)}return x(b);})();\n;return Component;"
+  },
+  "_id": "projects/to-wilt-motionglb.mdx",
+  "_raw": {
+    "sourceFilePath": "projects/to-wilt-motionglb.mdx",
+    "sourceFileName": "to-wilt-motionglb.mdx",
+    "sourceFileDir": "projects",
+    "contentType": "mdx",
+    "flattenedPath": "projects/to-wilt-motionglb"
+  },
+  "type": "Project",
+  "url": "/projects/to-wilt-motionglb"
+}

@@ -5,7 +5,8 @@ import projects__multiPhone_3dRigMdx from './projects__multi-phone-3d-rig.mdx.js
 import projects__opuntiaMdx from './projects__opuntia.mdx.json' with { type: 'json' }
 import projects__sirenDiffusionMdx from './projects__siren-diffusion.mdx.json' with { type: 'json' }
 import projects__tftFinanceMdx from './projects__tft-finance.mdx.json' with { type: 'json' }
+import projects__toWiltMotionglbMdx from './projects__to-wilt-motionglb.mdx.json' with { type: 'json' }
 import projects__toWiltMdx from './projects__to-wilt.mdx.json' with { type: 'json' }
 import projects__visionRepresentationMdx from './projects__vision-representation.mdx.json' with { type: 'json' }
 
-export const allProjects = [projects__mesquiteMocapMdx, projects__multiPhone_3dRigMdx, projects__opuntiaMdx, projects__sirenDiffusionMdx, projects__tftFinanceMdx, projects__toWiltMdx, projects__visionRepresentationMdx]
+export const allProjects = [projects__mesquiteMocapMdx, projects__multiPhone_3dRigMdx, projects__opuntiaMdx, projects__sirenDiffusionMdx, projects__tftFinanceMdx, projects__toWiltMotionglbMdx, projects__toWiltMdx, projects__visionRepresentationMdx]

@@ -1,6 +1,7 @@
 "use client";
 
 import Particles from "@tsparticles/react";
+import type { Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { useTheme } from "next-themes";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -72,7 +73,7 @@ export function ParticleBackground() {
       ? false
       : fallbackIsDark;
 
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
 

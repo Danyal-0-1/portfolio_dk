@@ -219,6 +219,50 @@
       "hasWarnings": false,
       "documentTypeName": "Project"
     },
+    "projects/to-wilt-motionglb.mdx": {
+      "document": {
+        "title": "To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB",
+        "slug": "to-wilt-motionglb",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Artist / Researcher (data capture + pipeline)",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "time-lapse",
+          "motionglb",
+          "dataset",
+          "temporal-modeling"
+        ],
+        "heroMetric": "22k+ images | 4 synchronized Sony cameras | 7 days",
+        "hook": "Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.",
+        "featured": false,
+        "order": 5,
+        "links": {
+          "github": "https://github.com/tejaswigowda/motionGLB",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\n## Overview\n\nA focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\n\n## Pipeline\n\n- Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\n- Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\n- Automated background removal in Photoshop via scripting, isolating the rose across frames.\n- Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\n",
+          "code": "var Component=(()=>{var h=Object.create;var a=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},s=(t,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of p(e))!f.call(t,n)&&n!==i&&a(t,n,{get:()=>e[n],enumerable:!(r=u(e,n))||r.enumerable});return t};var M=(t,e,i)=>(i=t!=null?h(g(t)):{},s(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),x=t=>s(a({},\"__esModule\",{value:!0}),t);var d=w((_,l)=>{l.exports=_jsx_runtime});var b={};y(b,{default:()=>c,frontmatter:()=>k});var o=M(d()),k={title:\"To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB\",slug:\"to-wilt-motionglb\",kind:\"installation\",year:\"2025\",role:\"Artist / Researcher (data capture + pipeline)\",themes:[\"AI & Computational Media\"],tags:[\"time-lapse\",\"motionglb\",\"dataset\",\"temporal-modeling\"],hook:\"Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.\",heroMetric:\"22k+ images | 4 synchronized Sony cameras | 7 days\",featured:!1,order:5,links:{github:\"https://github.com/tejaswigowda/motionGLB\"}};function m(t){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,o.jsx)(e.p,{children:\"A focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\"}),`\n`,(0,o.jsx)(e.h2,{children:\"Pipeline\"}),`\n`,(0,o.jsxs)(e.ul,{children:[`\n`,(0,o.jsx)(e.li,{children:\"Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Automated background removal in Photoshop via scripting, isolating the rose across frames.\"}),`\n`,(0,o.jsx)(e.li,{children:\"Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\"}),`\n`]})]})}function c(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,{...t,children:(0,o.jsx)(m,{...t})}):m(t)}return x(b);})();\n;return Component;"
+        },
+        "_id": "projects/to-wilt-motionglb.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/to-wilt-motionglb.mdx",
+          "sourceFileName": "to-wilt-motionglb.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/to-wilt-motionglb"
+        },
+        "type": "Project",
+        "url": "/projects/to-wilt-motionglb"
+      },
+      "documentHash": "1767645316496",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
     "projects/to-wilt.mdx": {
       "document": {
         "title": "To Wilt – MFA Thesis Installation",
@@ -238,9 +282,14 @@
         "hook": "Four-space AI-driven installation about love, decay, and environmental change.",
         "featured": true,
         "order": 4,
+        "links": {
+          "github": "https://github.com/Danyal-0-1/LLMs-dialogue.git",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
         "body": {
           "raw": "\n\n## Concept & Research Question\n\n_To Wilt_ is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.\n\n## Space 1 – Rose Growth & Voices\n\nA multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM “voices” –\na philosopher, a neuroscientist, and a lover – speak over the images, each framing emotion and perception\nfrom a different angle.\n\n## Space 2 – Printed Dialogue\n\nTwo LLM “lovers” converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.\n\n## Space 3 – Decay Dataset\n\nA self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the “decay of feelings” and memory.\n\n## Space 4 – Instrumented Rose Tank\n\nA large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.\n\n## Technical Notes\n\nThe installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.\n\n## Reflections\n\n_To Wilt_ extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.\n",
-          "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var a in e)s(n,a,{get:e[a],enumerable:!0})},r=(n,e,a,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of u(e))!v.call(n,o)&&o!==a&&s(n,o,{get:()=>e[o],enumerable:!(i=p(e,o))||i.enumerable});return n};var w=(n,e,a)=>(a=n!=null?m(g(n)):{},r(e||!n||!n.__esModule?s(a,\"default\",{value:n,enumerable:!0}):a,n)),x=n=>r(s({},\"__esModule\",{value:!0}),n);var l=f((M,c)=>{c.exports=_jsx_runtime});var L={};y(L,{default:()=>h,frontmatter:()=>b});var t=w(l()),b={title:\"To Wilt \\u2013 MFA Thesis Installation\",slug:\"to-wilt\",kind:\"installation\",year:\"2024\",role:\"Artist\\u2013researcher; concept, systems, and installation\",themes:[\"AI & Computational Media\"],tags:[\"LLM\",\"installation\",\"sensor-fusion\",\"media-art\"],hook:\"Four-space AI-driven installation about love, decay, and environmental change.\",featured:!0,order:4};function d(n){let e={em:\"em\",h2:\"h2\",p:\"p\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Concept & Research Question\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.`]}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 1 \\u2013 Rose Growth & Voices\"}),`\n`,(0,t.jsx)(e.p,{children:`A multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM \\u201Cvoices\\u201D \\u2013\na philosopher, a neuroscientist, and a lover \\u2013 speak over the images, each framing emotion and perception\nfrom a different angle.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 2 \\u2013 Printed Dialogue\"}),`\n`,(0,t.jsx)(e.p,{children:`Two LLM \\u201Clovers\\u201D converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 3 \\u2013 Decay Dataset\"}),`\n`,(0,t.jsx)(e.p,{children:`A self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the \\u201Cdecay of feelings\\u201D and memory.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 4 \\u2013 Instrumented Rose Tank\"}),`\n`,(0,t.jsx)(e.p,{children:`A large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Technical Notes\"}),`\n`,(0,t.jsx)(e.p,{children:`The installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Reflections\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(d,{...n})}):d(n)}return x(L);})();\n;return Component;"
+          "code": "var Component=(()=>{var m=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var a in e)i(n,a,{get:e[a],enumerable:!0})},r=(n,e,a,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of u(e))!v.call(n,o)&&o!==a&&i(n,o,{get:()=>e[o],enumerable:!(s=p(e,o))||s.enumerable});return n};var w=(n,e,a)=>(a=n!=null?m(g(n)):{},r(e||!n||!n.__esModule?i(a,\"default\",{value:n,enumerable:!0}):a,n)),b=n=>r(i({},\"__esModule\",{value:!0}),n);var l=f((T,c)=>{c.exports=_jsx_runtime});var L={};y(L,{default:()=>h,frontmatter:()=>x});var t=w(l()),x={title:\"To Wilt \\u2013 MFA Thesis Installation\",slug:\"to-wilt\",kind:\"installation\",year:\"2024\",role:\"Artist\\u2013researcher; concept, systems, and installation\",themes:[\"AI & Computational Media\"],tags:[\"LLM\",\"installation\",\"sensor-fusion\",\"media-art\"],hook:\"Four-space AI-driven installation about love, decay, and environmental change.\",featured:!0,order:4,links:{github:\"https://github.com/Danyal-0-1/LLMs-dialogue.git\"}};function d(n){let e={em:\"em\",h2:\"h2\",p:\"p\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Concept & Research Question\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.`]}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 1 \\u2013 Rose Growth & Voices\"}),`\n`,(0,t.jsx)(e.p,{children:`A multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM \\u201Cvoices\\u201D \\u2013\na philosopher, a neuroscientist, and a lover \\u2013 speak over the images, each framing emotion and perception\nfrom a different angle.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 2 \\u2013 Printed Dialogue\"}),`\n`,(0,t.jsx)(e.p,{children:`Two LLM \\u201Clovers\\u201D converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 3 \\u2013 Decay Dataset\"}),`\n`,(0,t.jsx)(e.p,{children:`A self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the \\u201Cdecay of feelings\\u201D and memory.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 4 \\u2013 Instrumented Rose Tank\"}),`\n`,(0,t.jsx)(e.p,{children:`A large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Technical Notes\"}),`\n`,(0,t.jsx)(e.p,{children:`The installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Reflections\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(d,{...n})}):d(n)}return b(L);})();\n;return Component;"
         },
         "_id": "projects/to-wilt.mdx",
         "_raw": {
@@ -253,7 +302,7 @@
         "type": "Project",
         "url": "/projects/to-wilt"
       },
-      "documentHash": "1767641345964",
+      "documentHash": "1767645990346",
       "hasWarnings": false,
       "documentTypeName": "Project"
     },
