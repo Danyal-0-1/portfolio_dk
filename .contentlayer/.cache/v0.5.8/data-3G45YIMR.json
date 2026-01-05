@@ -136,6 +136,45 @@
       "hasWarnings": false,
       "documentTypeName": "Project"
     },
+    "projects/siren-diffusion.mdx": {
+      "document": {
+        "title": "SIREN & Diffusion Experiments",
+        "slug": "siren-diffusion",
+        "kind": "experiment",
+        "year": "2024",
+        "role": "Researcher – model training and evaluation",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "SIREN",
+          "diffusion-models",
+          "generative",
+          "implicit-representations"
+        ],
+        "heroMetric": "Small-scale experiments on learned representations and generative quality",
+        "hook": "Experiments with SIREN-based implicit representations and diffusion models.",
+        "featured": false,
+        "order": 6,
+        "body": {
+          "raw": "\n\n## Overview\n\nTwo parallel experiments: reproducing SIREN implicit neural representations at high resolution and building diffusion-model sketches (DCGAN → Progressive GAN → diffusion) to study latent trajectories and editability. These exercises were part of coursework and self-directed research to gain intuition about continuous signal representations and modern generative priors. :contentReference[oaicite:11]{index=11}\n\n## SIREN (Implicit Representations)\n\n- Implemented sinusoidal representation networks (SIREN) to encode images at 1024×1024 resolution.\n- Explored positional encodings and activation scaling to stabilize training.\n- Observed excellent reconstruction fidelity for textures and high-frequency detail compared to baseline MLPs.\n\n## Diffusion & GAN Experiments\n\n- Re-implemented course assignments: DCGAN, Progressive GAN, and a basic diffusion pipeline on curated datasets.\n- Performed latent interpolations and denoising trajectories to understand mode coverage and sample diversity.\n- Benchmarked training behavior on an A100 and profiled memory/perf trade-offs to inform future model decisions.\n\n## Outcomes\n\n- The experiments improved practical know-how around model instabilities, training curricula for generative models, and how implicit representations can be integrated into larger graphics/vision pipelines (e.g., for texture compression or controllable editing in Happenstance / To Wilt).\n",
+          "code": "var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),v=(n,e)=>{for(var t in e)o(n,t,{get:e[t],enumerable:!0})},a=(n,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of h(e))!g.call(n,r)&&r!==t&&o(n,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return n};var b=(n,e,t)=>(t=n!=null?u(f(n)):{},a(e||!n||!n.__esModule?o(t,\"default\",{value:n,enumerable:!0}):t,n)),N=n=>a(o({},\"__esModule\",{value:!0}),n);var d=x((y,l)=>{l.exports=_jsx_runtime});var E={};v(E,{default:()=>p,frontmatter:()=>w});var i=b(d()),w={title:\"SIREN & Diffusion Experiments\",slug:\"siren-diffusion\",kind:\"experiment\",year:\"2024\",role:\"Researcher \\u2013 model training and evaluation\",themes:[\"AI & Computational Media\"],tags:[\"SIREN\",\"diffusion-models\",\"generative\",\"implicit-representations\"],heroMetric:\"Small-scale experiments on learned representations and generative quality\",hook:\"Experiments with SIREN-based implicit representations and diffusion models.\",featured:!1,order:6};function c(n){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...n.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,i.jsxs)(e.p,{children:[\"Two parallel experiments: reproducing SIREN implicit neural representations at high resolution and building diffusion-model sketches (DCGAN \\u2192 Progressive GAN \\u2192 diffusion) to study latent trajectories and editability. These exercises were part of coursework and self-directed research to gain intuition about continuous signal representations and modern generative priors. :contentReference[oaicite:11]\",index=11]}),`\n`,(0,i.jsx)(e.h2,{children:\"SIREN (Implicit Representations)\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"Implemented sinusoidal representation networks (SIREN) to encode images at 1024\\xD71024 resolution.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Explored positional encodings and activation scaling to stabilize training.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Observed excellent reconstruction fidelity for textures and high-frequency detail compared to baseline MLPs.\"}),`\n`]}),`\n`,(0,i.jsx)(e.h2,{children:\"Diffusion & GAN Experiments\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"Re-implemented course assignments: DCGAN, Progressive GAN, and a basic diffusion pipeline on curated datasets.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Performed latent interpolations and denoising trajectories to understand mode coverage and sample diversity.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Benchmarked training behavior on an A100 and profiled memory/perf trade-offs to inform future model decisions.\"}),`\n`]}),`\n`,(0,i.jsx)(e.h2,{children:\"Outcomes\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"The experiments improved practical know-how around model instabilities, training curricula for generative models, and how implicit representations can be integrated into larger graphics/vision pipelines (e.g., for texture compression or controllable editing in Happenstance / To Wilt).\"}),`\n`]})]})}function p(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(c,{...n})}):c(n)}return N(E);})();\n;return Component;"
+        },
+        "_id": "projects/siren-diffusion.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/siren-diffusion.mdx",
+          "sourceFileName": "siren-diffusion.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/siren-diffusion"
+        },
+        "type": "Project",
+        "url": "/projects/siren-diffusion"
+      },
+      "documentHash": "1767641345964",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
     "projects/tft-finance.mdx": {
       "document": {
         "title": "Temporal Fusion Transformers for Financial Forecasting",
@@ -177,6 +216,83 @@
         "url": "/projects/tft-finance"
       },
       "documentHash": "1767592078200",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/to-wilt.mdx": {
+      "document": {
+        "title": "To Wilt – MFA Thesis Installation",
+        "slug": "to-wilt",
+        "kind": "installation",
+        "year": "2024",
+        "role": "Artist–researcher; concept, systems, and installation",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "LLM",
+          "installation",
+          "sensor-fusion",
+          "media-art"
+        ],
+        "hook": "Four-space AI-driven installation about love, decay, and environmental change.",
+        "featured": true,
+        "order": 4,
+        "body": {
+          "raw": "\n\n## Concept & Research Question\n\n_To Wilt_ is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.\n\n## Space 1 – Rose Growth & Voices\n\nA multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM “voices” –\na philosopher, a neuroscientist, and a lover – speak over the images, each framing emotion and perception\nfrom a different angle.\n\n## Space 2 – Printed Dialogue\n\nTwo LLM “lovers” converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.\n\n## Space 3 – Decay Dataset\n\nA self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the “decay of feelings” and memory.\n\n## Space 4 – Instrumented Rose Tank\n\nA large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.\n\n## Technical Notes\n\nThe installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.\n\n## Reflections\n\n_To Wilt_ extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.\n",
+          "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var a in e)s(n,a,{get:e[a],enumerable:!0})},r=(n,e,a,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of u(e))!v.call(n,o)&&o!==a&&s(n,o,{get:()=>e[o],enumerable:!(i=p(e,o))||i.enumerable});return n};var w=(n,e,a)=>(a=n!=null?m(g(n)):{},r(e||!n||!n.__esModule?s(a,\"default\",{value:n,enumerable:!0}):a,n)),x=n=>r(s({},\"__esModule\",{value:!0}),n);var l=f((M,c)=>{c.exports=_jsx_runtime});var L={};y(L,{default:()=>h,frontmatter:()=>b});var t=w(l()),b={title:\"To Wilt \\u2013 MFA Thesis Installation\",slug:\"to-wilt\",kind:\"installation\",year:\"2024\",role:\"Artist\\u2013researcher; concept, systems, and installation\",themes:[\"AI & Computational Media\"],tags:[\"LLM\",\"installation\",\"sensor-fusion\",\"media-art\"],hook:\"Four-space AI-driven installation about love, decay, and environmental change.\",featured:!0,order:4};function d(n){let e={em:\"em\",h2:\"h2\",p:\"p\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Concept & Research Question\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.`]}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 1 \\u2013 Rose Growth & Voices\"}),`\n`,(0,t.jsx)(e.p,{children:`A multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM \\u201Cvoices\\u201D \\u2013\na philosopher, a neuroscientist, and a lover \\u2013 speak over the images, each framing emotion and perception\nfrom a different angle.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 2 \\u2013 Printed Dialogue\"}),`\n`,(0,t.jsx)(e.p,{children:`Two LLM \\u201Clovers\\u201D converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 3 \\u2013 Decay Dataset\"}),`\n`,(0,t.jsx)(e.p,{children:`A self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the \\u201Cdecay of feelings\\u201D and memory.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 4 \\u2013 Instrumented Rose Tank\"}),`\n`,(0,t.jsx)(e.p,{children:`A large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Technical Notes\"}),`\n`,(0,t.jsx)(e.p,{children:`The installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Reflections\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(d,{...n})}):d(n)}return x(L);})();\n;return Component;"
+        },
+        "_id": "projects/to-wilt.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/to-wilt.mdx",
+          "sourceFileName": "to-wilt.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/to-wilt"
+        },
+        "type": "Project",
+        "url": "/projects/to-wilt"
+      },
+      "documentHash": "1767641345964",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/vision-representation.mdx": {
+      "document": {
+        "title": "Vision & Representation Experiments",
+        "slug": "vision-representation",
+        "kind": "experiment",
+        "year": "2024",
+        "role": "Researcher – model design and analysis",
+        "themes": [
+          "Vision & Representation"
+        ],
+        "tags": [
+          "efficientnet",
+          "vision-transformer",
+          "resnet",
+          "representation-learning"
+        ],
+        "heroMetric": "Comparative experiments across modern vision backbones",
+        "hook": "Course and lab experiments exploring modern vision backbones and representation learning.",
+        "featured": false,
+        "order": 7,
+        "body": {
+          "raw": "\n\n## Overview\n\nA set of supervised and self-supervised style experiments executed as part of a deep learning curriculum and self-directed study. The goal was to compare architectures (EfficientNet, ViT, custom ResNet) under controlled augmentation and compute budgets, and to explore interpretability methods (Grad-CAM) and perceptual loss variants for downstream image tasks. :contentReference[oaicite:9]{index=9}\n\n## Representative Experiments\n\n- **EfficientNetV2 fine-tuning:** Fine-tuned on Oxford Flowers-102 with custom augmentations and multi-GPU training; validated class-balance strategies and augmentation schedules.\n- **ViT & Representational Probes:** Trained ViT-B32 on a domain-specific PV-fault dataset, compared head-only vs full-finetune methods.\n- **ResNet-36 & custom activations:** Implemented a ResNet-36 from scratch, experimented with an analytic custom activation and benchmarked against ReLU baselines.\n- **Interpretability:** Generated Grad-CAM maps to inspect class discriminative regions and evaluate whether features align with human-perceptible cues.\n\n## Outcomes\n\n- Demonstrated practical knowledge of end-to-end vision pipelines (dataset curation → augmentation → multi-GPU training → evaluation).\n- Gained fluency in model selection trade-offs, fine-tuning strategies, and basic interpretability techniques useful for downstream research and production prototypes. :contentReference[oaicite:10]{index=10}\n\n## Notes\n\nThese experiments are compact and reproducible; they serve as methodological building blocks for larger perception projects (e.g., Mesquite MoCap visual fusion, Happenstance).\n",
+          "code": "var Component=(()=>{var p=Object.create;var a=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},o=(t,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of h(e))!g.call(t,r)&&r!==i&&a(t,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return t};var b=(t,e,i)=>(i=t!=null?p(f(t)):{},o(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),y=t=>o(a({},\"__esModule\",{value:!0}),t);var l=x((M,c)=>{c.exports=_jsx_runtime});var R={};v(R,{default:()=>u,frontmatter:()=>w});var n=b(l()),w={title:\"Vision & Representation Experiments\",slug:\"vision-representation\",kind:\"experiment\",year:\"2024\",role:\"Researcher \\u2013 model design and analysis\",themes:[\"Vision & Representation\"],tags:[\"efficientnet\",\"vision-transformer\",\"resnet\",\"representation-learning\"],heroMetric:\"Comparative experiments across modern vision backbones\",hook:\"Course and lab experiments exploring modern vision backbones and representation learning.\",featured:!1,order:7};function d(t){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,n.jsxs)(e.p,{children:[\"A set of supervised and self-supervised style experiments executed as part of a deep learning curriculum and self-directed study. The goal was to compare architectures (EfficientNet, ViT, custom ResNet) under controlled augmentation and compute budgets, and to explore interpretability methods (Grad-CAM) and perceptual loss variants for downstream image tasks. :contentReference[oaicite:9]\",index=9]}),`\n`,(0,n.jsx)(e.h2,{children:\"Representative Experiments\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"EfficientNetV2 fine-tuning:\"}),\" Fine-tuned on Oxford Flowers-102 with custom augmentations and multi-GPU training; validated class-balance strategies and augmentation schedules.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"ViT & Representational Probes:\"}),\" Trained ViT-B32 on a domain-specific PV-fault dataset, compared head-only vs full-finetune methods.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"ResNet-36 & custom activations:\"}),\" Implemented a ResNet-36 from scratch, experimented with an analytic custom activation and benchmarked against ReLU baselines.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Interpretability:\"}),\" Generated Grad-CAM maps to inspect class discriminative regions and evaluate whether features align with human-perceptible cues.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Outcomes\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Demonstrated practical knowledge of end-to-end vision pipelines (dataset curation \\u2192 augmentation \\u2192 multi-GPU training \\u2192 evaluation).\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"Gained fluency in model selection trade-offs, fine-tuning strategies, and basic interpretability techniques useful for downstream research and production prototypes. :contentReference[oaicite:10]\",index=10]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Notes\"}),`\n`,(0,n.jsx)(e.p,{children:\"These experiments are compact and reproducible; they serve as methodological building blocks for larger perception projects (e.g., Mesquite MoCap visual fusion, Happenstance).\"})]})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return y(R);})();\n;return Component;"
+        },
+        "_id": "projects/vision-representation.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/vision-representation.mdx",
+          "sourceFileName": "vision-representation.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/vision-representation"
+        },
+        "type": "Project",
+        "url": "/projects/vision-representation"
+      },
+      "documentHash": "1767641345965",
       "hasWarnings": false,
       "documentTypeName": "Project"
     }
