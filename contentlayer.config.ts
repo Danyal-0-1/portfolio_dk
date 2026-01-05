@@ -1,4 +1,19 @@
-import { defineDocumentType, makeSource } from "contentlayer2/source-files";
+import {
+  defineDocumentType,
+  defineNestedType,
+  makeSource,
+} from "contentlayer2/source-files";
+
+const ProjectLinks = defineNestedType(() => ({
+  name: "ProjectLinks",
+  fields: {
+    github: { type: "string", required: false },
+    paper: { type: "string", required: false },
+    acceptance: { type: "string", required: false },
+    demo: { type: "string", required: false },
+    video: { type: "string", required: false },
+  },
+}));
 
 export const Project = defineDocumentType(() => ({
   name: "Project",
@@ -14,23 +29,18 @@ export const Project = defineDocumentType(() => ({
     },
     year: { type: "string", required: true },
     role: { type: "string", required: true },
-    themes: { type: "list", of: { type: "string" } },
-    tags: { type: "list", of: { type: "string" } },
+
+    // Safer defaults so docs don’t get skipped if empty/missing
+    themes: { type: "list", of: { type: "string" }, required: false, default: [] },
+    tags: { type: "list", of: { type: "string" }, required: false, default: [] },
+
     heroMetric: { type: "string", required: false },
     hook: { type: "string", required: false },
     featured: { type: "boolean", default: false },
     order: { type: "number", required: false },
-    links: {
-      type: "nested",
-      required: false,
-      of: {
-        github: { type: "string", required: false },
-        paper: { type: "string", required: false },
-        acceptance: { type: "string", required: false },
-        demo: { type: "string", required: false },
-        video: { type: "string", required: false },
-      },
-    },
+
+    // ✅ Correct nested field
+    links: { type: "nested", of: ProjectLinks, required: false },
   },
   computedFields: {
     url: {

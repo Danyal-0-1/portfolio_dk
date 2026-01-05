@@ -18,12 +18,13 @@ export type Project = {
   kind: 'research' | 'installation' | 'experiment'
   year: string
   role: string
-  themes?: string[] | undefined
-  tags?: string[] | undefined
+  themes: string[]
+  tags: string[]
   heroMetric?: string | undefined
   hook?: string | undefined
   featured: boolean
-  order?: string | undefined
+  order?: number | undefined
+  links?: ProjectLinks | undefined
   /** MDX file body */
   body: MDX
   url: string
@@ -43,7 +44,18 @@ export type Writing = {
 }  
 
 /** Nested types */
-  
+export type ProjectLinks = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'ProjectLinks'
+  github?: string | undefined
+  paper?: string | undefined
+  acceptance?: string | undefined
+  demo?: string | undefined
+  video?: string | undefined
+
+}  
 
 /** Helper types */
 
@@ -53,8 +65,8 @@ export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 export type DocumentTypes = Project | Writing
 export type DocumentTypeNames = 'Project' | 'Writing'
 
-export type NestedTypes = never
-export type NestedTypeNames = never
+export type NestedTypes = ProjectLinks
+export type NestedTypeNames = 'ProjectLinks'
 
 export type DataExports = {
   allDocuments: DocumentTypes[]
@@ -84,7 +96,7 @@ export type DocumentTypeMap = {
 }
 
 export type NestedTypeMap = {
-
+  ProjectLinks: ProjectLinks
 }
 
  
