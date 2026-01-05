@@ -10,8 +10,8 @@ export function getProjectsByKind(kind: ProjectKind): Project[] {
   return allProjects
     .filter((p) => p.kind === kind)
     .sort((a, b) => {
-      const aOrder = a.order ? Number(a.order) : 0;
-      const bOrder = b.order ? Number(b.order) : 0;
+      const aOrder = typeof a.order === "number" ? a.order : Number(a.order ?? 0);
+      const bOrder = typeof b.order === "number" ? b.order : Number(b.order ?? 0);
       return aOrder - bOrder;
     });
 }
@@ -20,8 +20,8 @@ export function getFeaturedProjects(): Project[] {
   return allProjects
     .filter((p) => p.featured)
     .sort((a, b) => {
-      const aOrder = a.order ? Number(a.order) : 0;
-      const bOrder = b.order ? Number(b.order) : 0;
+      const aOrder = typeof a.order === "number" ? a.order : Number(a.order ?? 0);
+      const bOrder = typeof b.order === "number" ? b.order : Number(b.order ?? 0);
       return aOrder - bOrder;
     });
 }

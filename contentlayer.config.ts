@@ -19,8 +19,18 @@ export const Project = defineDocumentType(() => ({
     heroMetric: { type: "string", required: false },
     hook: { type: "string", required: false },
     featured: { type: "boolean", default: false },
-    order: { type: "string", required: false },
-    links: { type: "json", required: false },
+    order: { type: "number", required: false },
+    links: {
+      type: "nested",
+      required: false,
+      of: {
+        github: { type: "string", required: false },
+        paper: { type: "string", required: false },
+        acceptance: { type: "string", required: false },
+        demo: { type: "string", required: false },
+        video: { type: "string", required: false },
+      },
+    },
   },
   computedFields: {
     url: {

@@ -5,6 +5,8 @@ export default function ProjectsPage() {
   const researchProjects = getProjectsByKind("research");
   const installations = getProjectsByKind("installation");
   const experiments = getProjectsByKind("experiment");
+  const projectCount =
+    researchProjects.length + installations.length + experiments.length;
 
   return (
     <div className="space-y-6">
@@ -15,6 +17,9 @@ export default function ProjectsPage() {
         <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-2xl">
           Research systems, installations, and experiments spanning embodied
           perception, computational media, and AI-driven tools.
+        </p>
+        <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+          Projects count: {projectCount}
         </p>
         <div className="mt-4 flex flex-wrap gap-2 text-xs">
           <a
