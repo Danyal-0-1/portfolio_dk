@@ -39,7 +39,7 @@ export const Project = defineDocumentType(() => ({
     featured: { type: "boolean", default: false },
     order: { type: "number", required: false },
 
-    // ✅ correct nested usage
+    // correct nested usage
     links: { type: "nested", of: ProjectLinks, required: false },
   },
   computedFields: {
