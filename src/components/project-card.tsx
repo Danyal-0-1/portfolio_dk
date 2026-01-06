@@ -1,8 +1,59 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "contentlayer/generated";
 import { ProjectLinks, type ProjectLinkMap } from "@/components/project-links";
 
-export function ProjectCard({ project }: { project: Project }) {
+type ProjectCardVariant = "full" | "compact";
+
+type ProjectCardProps = {
+  project: Project;
+  coverImage?: string;
+  variant?: ProjectCardVariant;
+};
+
+export function ProjectCard({
+  project,
+  coverImage,
+  variant = "full",
+}: ProjectCardProps) {
+  if (variant === "compact") {
+    return (
+      <article className="group relative rounded-2xl border border-slate-200 bg-white/80 p-4 flex flex-col gap-3 shadow-sm hover:shadow-md hover:border-accent/70 hover:-translate-y-0.5 transition dark:border-slate-800 dark:bg-slate-900/40">
+        <Link
+          href={project.url}
+          className="absolute inset-0 z-10 rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 dark:focus-visible:ring-offset-slate-950"
+        >
+          <span className="sr-only">View {project.title}</span>
+        </Link>
+        <div className="flex flex-col gap-3">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-800 dark:bg-slate-900/60">
+            {coverImage ? (
+              <Image
+                src={coverImage}
+                alt={`${project.title} cover`}
+                fill
+                sizes="(min-width: 1024px) 520px, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition duration-500 group-hover:scale-[1.02]"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900" />
+            )}
+          </div>
+          <div className="min-w-0">
+            <h3 className="font-semibold text-sm sm:text-base group-hover:text-accent">
+              {project.title}
+            </h3>
+            {project.hook && (
+              <p className="text-xs text-slate-600 dark:text-slate-300 mt-1">
+                {project.hook}
+              </p>
+            )}
+          </div>
+        </div>
+      </article>
+    );
+  }
+
   const links = (project as { links?: ProjectLinkMap }).links;
 
   return (

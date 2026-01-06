@@ -38,6 +38,10 @@ export const Project = defineDocumentType(() => ({
     hook: { type: "string", required: false },
     featured: { type: "boolean", default: false },
     order: { type: "number", required: false },
+    coverImage: { type: "string", required: false },
+    gallery: { type: "list", of: { type: "string" }, required: false, default: [] },
+    video: { type: "string", required: false },
+    pdf: { type: "string", required: false },
 
     // ✅ Correct nested field
     links: { type: "nested", of: ProjectLinks, required: false },

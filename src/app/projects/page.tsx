@@ -1,5 +1,7 @@
 import { getProjectsByKind } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
+import { resolveProjectMedia, type ProjectMediaOverrides } from "@/lib/project-media";
+import type { Project } from "contentlayer/generated";
 
 export default function ProjectsPage() {
   const researchProjects = getProjectsByKind("research");
@@ -10,6 +12,16 @@ export default function ProjectsPage() {
     research: researchProjects.length,
     installation: installations.length,
     experiment: experiments.length,
+  };
+
+  const getCoverImage = (project: Project) => {
+    const overrides = project as ProjectMediaOverrides;
+    return resolveProjectMedia(project.slug, {
+      coverImage: overrides.coverImage,
+      gallery: overrides.gallery,
+      video: overrides.video,
+      pdf: overrides.pdf,
+    }).coverImage;
   };
 
   return (
@@ -62,7 +74,12 @@ export default function ProjectsPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {researchProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              coverImage={getCoverImage(project)}
+              variant="compact"
+            />
           ))}
         </div>
       </section>
@@ -77,7 +94,12 @@ export default function ProjectsPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {installations.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              coverImage={getCoverImage(project)}
+              variant="compact"
+            />
           ))}
         </div>
       </section>
@@ -93,7 +115,12 @@ export default function ProjectsPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {experiments.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              coverImage={getCoverImage(project)}
+              variant="compact"
+            />
           ))}
         </div>
       </section>
