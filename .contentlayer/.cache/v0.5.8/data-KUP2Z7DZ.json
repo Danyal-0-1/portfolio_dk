@@ -1,0 +1,472 @@
+{
+  "cacheItemsMap": {
+    "projects/happenstance-avatar.mdx": {
+      "document": {
+        "title": "Happenstance - Image-to-Avatar Pipeline for Virtual Worlds (In Progress)",
+        "slug": "happenstance-avatar",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Researcher / Developer",
+        "themes": [
+          "Embodied AI",
+          "Virtual Worlds",
+          "Surveillance & Identity"
+        ],
+        "tags": [
+          "PiFUHD",
+          "3D Reconstruction",
+          "Rigging",
+          "Mixamo",
+          "Unreal/Unity"
+        ],
+        "heroMetric": "Image -> PiFUHD mesh -> Mixamo rig -> game-engine ready",
+        "hook": "Single-photo -> rigged 3D character pipeline for rapid import into virtual environments.",
+        "featured": false,
+        "order": 30,
+        "coverImage": "/projects/happenstance-avatar/cover.jpg",
+        "gallery": [
+          "/projects/happenstance-avatar/01.jpg",
+          "/projects/happenstance-avatar/02.jpg"
+        ],
+        "video": "/projects/happenstance-avatar/video.mp4",
+        "body": {
+          "raw": "\n## Overview\n\nAn in-progress pipeline that turns a single human photograph into a rigged, animation-ready avatar for virtual worlds.\n\n## Pipeline\n\n- Built a pipeline that converts a single human photograph into a high-resolution 3D character.\n- Used Facebook Research PiFUHD (pixel-aligned implicit function) for image-based human digitization.\n- Rigged the extracted meshes using Mixamo to generate full armatures and animation readiness.\n- Produced several animations; characters import cleanly into game engines and virtual environments.\n- Goal: a faster, repeatable end-to-end workflow where users can input an image and receive a rigged, animation-ready avatar.\n\n## Media (coming soon)\n\nImages and short clips will be added once the pipeline outputs are finalized.\n",
+          "code": "var Component=(()=>{var h=Object.create;var t=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var i in e)t(n,i,{get:e[i],enumerable:!0})},l=(n,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!v.call(n,r)&&r!==i&&t(n,r,{get:()=>e[r],enumerable:!(o=g(e,r))||o.enumerable});return n};var j=(n,e,i)=>(i=n!=null?h(u(n)):{},l(e||!n||!n.__esModule?t(i,\"default\",{value:n,enumerable:!0}):i,n)),y=n=>l(t({},\"__esModule\",{value:!0}),n);var c=f((I,s)=>{s.exports=_jsx_runtime});var M={};x(M,{default:()=>p,frontmatter:()=>D});var a=j(c()),D={title:\"Happenstance - Image-to-Avatar Pipeline for Virtual Worlds (In Progress)\",slug:\"happenstance-avatar\",kind:\"installation\",year:\"2025\",role:\"Researcher / Developer\",themes:[\"Embodied AI\",\"Virtual Worlds\",\"Surveillance & Identity\"],tags:[\"PiFUHD\",\"3D Reconstruction\",\"Rigging\",\"Mixamo\",\"Unreal/Unity\"],hook:\"Single-photo -> rigged 3D character pipeline for rapid import into virtual environments.\",heroMetric:\"Image -> PiFUHD mesh -> Mixamo rig -> game-engine ready\",featured:!1,order:30,coverImage:\"/projects/happenstance-avatar/cover.jpg\",gallery:[\"/projects/happenstance-avatar/01.jpg\",\"/projects/happenstance-avatar/02.jpg\"],video:\"/projects/happenstance-avatar/video.mp4\"};function d(n){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...n.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,a.jsx)(e.p,{children:\"An in-progress pipeline that turns a single human photograph into a rigged, animation-ready avatar for virtual worlds.\"}),`\n`,(0,a.jsx)(e.h2,{children:\"Pipeline\"}),`\n`,(0,a.jsxs)(e.ul,{children:[`\n`,(0,a.jsx)(e.li,{children:\"Built a pipeline that converts a single human photograph into a high-resolution 3D character.\"}),`\n`,(0,a.jsx)(e.li,{children:\"Used Facebook Research PiFUHD (pixel-aligned implicit function) for image-based human digitization.\"}),`\n`,(0,a.jsx)(e.li,{children:\"Rigged the extracted meshes using Mixamo to generate full armatures and animation readiness.\"}),`\n`,(0,a.jsx)(e.li,{children:\"Produced several animations; characters import cleanly into game engines and virtual environments.\"}),`\n`,(0,a.jsx)(e.li,{children:\"Goal: a faster, repeatable end-to-end workflow where users can input an image and receive a rigged, animation-ready avatar.\"}),`\n`]}),`\n`,(0,a.jsx)(e.h2,{children:\"Media (coming soon)\"}),`\n`,(0,a.jsx)(e.p,{children:\"Images and short clips will be added once the pipeline outputs are finalized.\"})]})}function p(n={}){let{wrapper:e}=n.components||{};return e?(0,a.jsx)(e,{...n,children:(0,a.jsx)(d,{...n})}):d(n)}return y(M);})();\n;return Component;"
+        },
+        "_id": "projects/happenstance-avatar.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/happenstance-avatar.mdx",
+          "sourceFileName": "happenstance-avatar.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/happenstance-avatar"
+        },
+        "type": "Project",
+        "url": "/projects/happenstance-avatar"
+      },
+      "documentHash": "1767720116348",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/mesquite-mocap.mdx": {
+      "document": {
+        "title": "Mesquite MoCap – Open-Source Wearable 6-DoF Motion Capture",
+        "slug": "mesquite-mocap",
+        "kind": "research",
+        "year": "2024–2025",
+        "role": "Co-developer – firmware, sensor fusion, benchmarking",
+        "themes": [
+          "Embodied Perception & Sensor Fusion",
+          "Low-Cost Motion Capture & XR Tools"
+        ],
+        "tags": [
+          "sensor-fusion",
+          "embedded-systems",
+          "motion-capture",
+          "ESP32-C3",
+          "XR"
+        ],
+        "heroMetric": "~32 FPS • <15 ms latency • ~99.7% packet delivery",
+        "hook": "Open-source, wireless full-body 6-DoF motion capture using low-cost IMU nodes.",
+        "featured": true,
+        "order": 1,
+        "coverImage": "/projects/mesquite-mocap/cover.jpg",
+        "gallery": [
+          "/projects/mesquite-mocap/01.jpg"
+        ],
+        "links": {
+          "github": "https://github.com/Mesquite-Mocap/mesquite.cc",
+          "paper": "https://arxiv.org/abs/2512.22690",
+          "acceptance": "https://fossunited.org/c/indiafoss/2025/cfp/8o6jom3fk9",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\r\n## Problem & Context\r\n\r\nCommercial motion-capture systems such as OptiTrack are accurate but expensive and bound to controlled\r\noptical setups. For XR, embodied interaction, and robotics research, we wanted a low-cost wearable\r\nalternative that could run in ordinary spaces and survive packet loss, drift, and network noise.\r\n\r\n## Approach & System Overview\r\n\r\nMesquite MoCap is a full-body suit built from 15 wireless ESP32-C3 IMU nodes worn across the body.\r\nEach node streams timestamped inertial data over Wi-Fi to a receiver, which fuses orientations and\r\nexports BVH skeletons for visualization and downstream use.\r\n\r\nAt a high level:\r\n\r\n- **Hardware:** 15 ESP32-C3 IMU modules (accelerometer + gyroscope) mounted on straps.\r\n- **Firmware:** Arduino-based code for synchronized streaming, buffering, and retry logic.\r\n- **Host pipeline:** Calibration, sensor fusion, inverse kinematics, and BVH export.\r\n- **Visualization:** Real-time 3D skeleton in Unity / WebXR.\r\n\r\n## Robustness & Evaluation\r\n\r\nWe tuned the sensor-fusion and networking stack to:\r\n\r\n- Sustain roughly 32 FPS streaming from all 15 nodes.\r\n- Keep end-to-end latency under 15 ms in typical lab conditions.\r\n- Maintain packet delivery around 99–100% over Wi-Fi.\r\n\r\nWe benchmarked the system against an OptiTrack setup, observing joint-angle error in a small-degree\r\nrange on key joints for walking and running sequences.\r\n\r\n## My Contribution\r\n\r\n- Co-developed and debugged the ESP32-C3 firmware, including synchronization and buffering.\r\n- Implemented parts of the sensor-fusion stack and helped tune filters and calibration procedures.\r\n- Worked on the BVH export path and host-side tools used for benchmarking and visualization.\r\n- Helped design experiments and interpret results for a paper now under review.\r\n\r\n## Outcomes & Next Steps\r\n\r\nMesquite demonstrates that affordable, open-source IMU-based mocap can approach optical quality under\r\nreal-time constraints. Future work includes integrating additional sensing modalities (e.g., depth\r\ncameras, environmental sensors) and using the suit as a platform for embodied AI and human–robot\r\ninteraction studies.\r\n",
+          "code": "var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var b=(r,e)=>()=>(e||r((e={exports:{}}).exports,e),e.exports),y=(r,e)=>{for(var t in e)o(r,t,{get:e[t],enumerable:!0})},a=(r,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!f.call(r,i)&&i!==t&&o(r,i,{get:()=>e[i],enumerable:!(s=h(e,i))||s.enumerable});return r};var v=(r,e,t)=>(t=r!=null?p(g(r)):{},a(e||!r||!r.__esModule?o(t,\"default\",{value:r,enumerable:!0}):t,r)),k=r=>a(o({},\"__esModule\",{value:!0}),r);var l=b((C,d)=>{d.exports=_jsx_runtime});var M={};y(M,{default:()=>u,frontmatter:()=>w});var n=v(l()),w={title:\"Mesquite MoCap \\u2013 Open-Source Wearable 6-DoF Motion Capture\",slug:\"mesquite-mocap\",kind:\"research\",year:\"2024\\u20132025\",role:\"Co-developer \\u2013 firmware, sensor fusion, benchmarking\",themes:[\"Embodied Perception & Sensor Fusion\",\"Low-Cost Motion Capture & XR Tools\"],tags:[\"sensor-fusion\",\"embedded-systems\",\"motion-capture\",\"ESP32-C3\",\"XR\"],heroMetric:\"~32 FPS \\u2022 <15 ms latency \\u2022 ~99.7% packet delivery\",hook:\"Open-source, wireless full-body 6-DoF motion capture using low-cost IMU nodes.\",featured:!0,order:1,links:{github:\"https://github.com/Mesquite-Mocap/mesquite.cc\",paper:\"https://arxiv.org/abs/2512.22690\",acceptance:\"https://fossunited.org/c/indiafoss/2025/cfp/8o6jom3fk9\"},coverImage:\"/projects/mesquite-mocap/cover.jpg\",gallery:[\"/projects/mesquite-mocap/01.jpg\"]};function c(r){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Problem & Context\"}),`\n`,(0,n.jsx)(e.p,{children:`Commercial motion-capture systems such as OptiTrack are accurate but expensive and bound to controlled\\r\noptical setups. For XR, embodied interaction, and robotics research, we wanted a low-cost wearable\\r\nalternative that could run in ordinary spaces and survive packet loss, drift, and network noise.`}),`\n`,(0,n.jsx)(e.h2,{children:\"Approach & System Overview\"}),`\n`,(0,n.jsx)(e.p,{children:`Mesquite MoCap is a full-body suit built from 15 wireless ESP32-C3 IMU nodes worn across the body.\\r\nEach node streams timestamped inertial data over Wi-Fi to a receiver, which fuses orientations and\\r\nexports BVH skeletons for visualization and downstream use.`}),`\n`,(0,n.jsx)(e.p,{children:\"At a high level:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Hardware:\"}),\" 15 ESP32-C3 IMU modules (accelerometer + gyroscope) mounted on straps.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Firmware:\"}),\" Arduino-based code for synchronized streaming, buffering, and retry logic.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Host pipeline:\"}),\" Calibration, sensor fusion, inverse kinematics, and BVH export.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Visualization:\"}),\" Real-time 3D skeleton in Unity / WebXR.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Robustness & Evaluation\"}),`\n`,(0,n.jsx)(e.p,{children:\"We tuned the sensor-fusion and networking stack to:\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Sustain roughly 32 FPS streaming from all 15 nodes.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Keep end-to-end latency under 15 ms in typical lab conditions.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Maintain packet delivery around 99\\u2013100% over Wi-Fi.\"}),`\n`]}),`\n`,(0,n.jsx)(e.p,{children:`We benchmarked the system against an OptiTrack setup, observing joint-angle error in a small-degree\\r\nrange on key joints for walking and running sequences.`}),`\n`,(0,n.jsx)(e.h2,{children:\"My Contribution\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Co-developed and debugged the ESP32-C3 firmware, including synchronization and buffering.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Implemented parts of the sensor-fusion stack and helped tune filters and calibration procedures.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Worked on the BVH export path and host-side tools used for benchmarking and visualization.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Helped design experiments and interpret results for a paper now under review.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Outcomes & Next Steps\"}),`\n`,(0,n.jsx)(e.p,{children:`Mesquite demonstrates that affordable, open-source IMU-based mocap can approach optical quality under\\r\nreal-time constraints. Future work includes integrating additional sensing modalities (e.g., depth\\r\ncameras, environmental sensors) and using the suit as a platform for embodied AI and human\\u2013robot\\r\ninteraction studies.`})]})}function u(r={}){let{wrapper:e}=r.components||{};return e?(0,n.jsx)(e,{...r,children:(0,n.jsx)(c,{...r})}):c(r)}return k(M);})();\n;return Component;"
+        },
+        "_id": "projects/mesquite-mocap.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/mesquite-mocap.mdx",
+          "sourceFileName": "mesquite-mocap.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/mesquite-mocap"
+        },
+        "type": "Project",
+        "url": "/projects/mesquite-mocap"
+      },
+      "documentHash": "1767720116351",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/multi-phone-3d-rig.mdx": {
+      "document": {
+        "title": "Multi-Phone 3D Capture Rig",
+        "slug": "multi-phone-3d-rig",
+        "kind": "research",
+        "year": "2024–2025",
+        "role": "Designer & developer – rig, calibration, and reconstruction",
+        "themes": [
+          "Low-Cost Motion Capture & XR Tools"
+        ],
+        "tags": [
+          "multi-view",
+          "volumetric-capture",
+          "smartphone",
+          "3D-reconstruction"
+        ],
+        "heroMetric": "4–8 synchronized phones · small-scale volumetric capture",
+        "hook": "A flexible, low-cost smartphone rig for experimental multi-view 3D capture.",
+        "featured": false,
+        "order": 2,
+        "gallery": [],
+        "links": {
+          "github": "https://github.com/Danyal-0-1/phone-carousel",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\r\n\r\n## Problem & Motivation\r\n\r\nHigh-quality volumetric capture typically requires expensive cameras and infrastructure. The Multi-Phone Rig explores how widely available smartphones can be synchronized and calibrated into an affordable multi-view capture platform for motion research, XR content creation, and embodied interaction studies. The aim is not to beat studio systems on raw accuracy but to provide a practical, cheap, and transportable rig suitable for prototyping and fieldwork. :contentReference[oaicite:5]{index=5}\r\n\r\n## Approach & System Overview\r\n\r\n- **Physical rig:** A modular mount that holds 4–8 phones with consistent poses and line-of-sight to the capture volume.\r\n- **Sync mechanism:** A Raspberry Pi sends a UDP countdown to companion apps on each phone; phones trigger capture at the appointed timestamp and stream frames to a local server.\r\n- **Calibration:** Use ArUco markers for initial extrinsic calibration of each phone camera (solvePnP → absolute camera poses).\r\n- **Processing pipeline:** Per-frame 2D keypoints (MediaPipe / OpenPose) → temporal buffering → triangulation for 3D skeletons; optional COLMAP/CUSTOM pipeline for static mesh reconstruction.\r\n\r\n## Implementation Notes\r\n\r\n- The sync protocol prioritizes low-latency UDP control for start-of-capture with lightweight timestamp negotiation and small buffering to accommodate jitter.\r\n- Calibration obtains per-camera intrinsic/extrinsic parameters using OpenCV utilities; calibration is stored and reused across sessions to reduce setup time.\r\n- For dynamic capture, a short buffer allows minor alignment adjustments (frame-shift compensation) to reduce temporal misalignment effects.\r\n\r\n## Evaluation & Results\r\n\r\n- Early tests captured walking and gesturing sequences with **synchronization jitter < 50 ms**; in practice we observed ~20–50 ms depending on Wi-Fi conditions.\r\n- Fusion of 2D keypoints into 3D skeletons produced visually plausible motion suitable for animation and downstream XR use. Mesh reconstructions for static poses were coarse but usable for rapid prototyping.\r\n- The system is a pragmatic tool for rapid capture and exploratory HRI experiments; quantitative accuracy vs. optical mocap is left for future formal benchmarking. :contentReference[oaicite:6]{index=6}\r\n\r\n## My Contribution\r\n\r\n- Designed the rig and the app/server sync architecture.\r\n- Implemented the UDP synchronization protocol and the capture orchestration scripts.\r\n- Built the calibration pipeline (ArUco-based) and the initial 3D fusion code.\r\n\r\n## Outcomes & Next Steps\r\n\r\n- Immediate next steps: hardware trigger integration for sub-10 ms sync, increased camera counts, and systematic benchmarking against Mesquite MoCap and an optical system to quantify spatial/temporal error.\r\n",
+          "code": "var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var i in e)o(t,i,{get:e[i],enumerable:!0})},s=(t,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!f.call(t,r)&&r!==i&&o(t,r,{get:()=>e[r],enumerable:!(a=u(e,r))||a.enumerable});return t};var w=(t,e,i)=>(i=t!=null?p(g(t)):{},s(e||!t||!t.__esModule?o(i,\"default\",{value:t,enumerable:!0}):i,t)),v=t=>s(o({},\"__esModule\",{value:!0}),t);var l=y((P,c)=>{c.exports=_jsx_runtime});var D={};b(D,{default:()=>d,frontmatter:()=>x});var n=w(l()),x={title:\"Multi-Phone 3D Capture Rig\",slug:\"multi-phone-3d-rig\",kind:\"research\",year:\"2024\\u20132025\",role:\"Designer & developer \\u2013 rig, calibration, and reconstruction\",themes:[\"Low-Cost Motion Capture & XR Tools\"],tags:[\"multi-view\",\"volumetric-capture\",\"smartphone\",\"3D-reconstruction\"],heroMetric:\"4\\u20138 synchronized phones \\xB7 small-scale volumetric capture\",hook:\"A flexible, low-cost smartphone rig for experimental multi-view 3D capture.\",featured:!1,order:2,links:{github:\"https://github.com/Danyal-0-1/phone-carousel\"},gallery:[]};function h(t){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Problem & Motivation\"}),`\n`,(0,n.jsxs)(e.p,{children:[\"High-quality volumetric capture typically requires expensive cameras and infrastructure. The Multi-Phone Rig explores how widely available smartphones can be synchronized and calibrated into an affordable multi-view capture platform for motion research, XR content creation, and embodied interaction studies. The aim is not to beat studio systems on raw accuracy but to provide a practical, cheap, and transportable rig suitable for prototyping and fieldwork. :contentReference[oaicite:5]\",index=5]}),`\n`,(0,n.jsx)(e.h2,{children:\"Approach & System Overview\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Physical rig:\"}),\" A modular mount that holds 4\\u20138 phones with consistent poses and line-of-sight to the capture volume.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Sync mechanism:\"}),\" A Raspberry Pi sends a UDP countdown to companion apps on each phone; phones trigger capture at the appointed timestamp and stream frames to a local server.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Calibration:\"}),\" Use ArUco markers for initial extrinsic calibration of each phone camera (solvePnP \\u2192 absolute camera poses).\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Processing pipeline:\"}),\" Per-frame 2D keypoints (MediaPipe / OpenPose) \\u2192 temporal buffering \\u2192 triangulation for 3D skeletons; optional COLMAP/CUSTOM pipeline for static mesh reconstruction.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Implementation Notes\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"The sync protocol prioritizes low-latency UDP control for start-of-capture with lightweight timestamp negotiation and small buffering to accommodate jitter.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Calibration obtains per-camera intrinsic/extrinsic parameters using OpenCV utilities; calibration is stored and reused across sessions to reduce setup time.\"}),`\n`,(0,n.jsx)(e.li,{children:\"For dynamic capture, a short buffer allows minor alignment adjustments (frame-shift compensation) to reduce temporal misalignment effects.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Evaluation & Results\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[\"Early tests captured walking and gesturing sequences with \",(0,n.jsx)(e.strong,{children:\"synchronization jitter < 50 ms\"}),\"; in practice we observed ~20\\u201350 ms depending on Wi-Fi conditions.\"]}),`\n`,(0,n.jsx)(e.li,{children:\"Fusion of 2D keypoints into 3D skeletons produced visually plausible motion suitable for animation and downstream XR use. Mesh reconstructions for static poses were coarse but usable for rapid prototyping.\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"The system is a pragmatic tool for rapid capture and exploratory HRI experiments; quantitative accuracy vs. optical mocap is left for future formal benchmarking. :contentReference[oaicite:6]\",index=6]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"My Contribution\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Designed the rig and the app/server sync architecture.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Implemented the UDP synchronization protocol and the capture orchestration scripts.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Built the calibration pipeline (ArUco-based) and the initial 3D fusion code.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Outcomes & Next Steps\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Immediate next steps: hardware trigger integration for sub-10 ms sync, increased camera counts, and systematic benchmarking against Mesquite MoCap and an optical system to quantify spatial/temporal error.\"}),`\n`]})]})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(h,{...t})}):h(t)}return v(D);})();\n;return Component;"
+        },
+        "_id": "projects/multi-phone-3d-rig.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/multi-phone-3d-rig.mdx",
+          "sourceFileName": "multi-phone-3d-rig.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/multi-phone-3d-rig"
+        },
+        "type": "Project",
+        "url": "/projects/multi-phone-3d-rig"
+      },
+      "documentHash": "1767720116352",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/observation-apparatus.mdx": {
+      "document": {
+        "title": "Observation Apparatus - Satellite & Street-Level Vision Study (In Progress)",
+        "slug": "observation-apparatus",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Artist / Researcher",
+        "themes": [
+          "Surveillance",
+          "Image Theory",
+          "Public Space"
+        ],
+        "tags": [
+          "Satellite Imagery",
+          "Street View",
+          "Observation",
+          "Visual Culture"
+        ],
+        "heroMetric": "Satellite + Street View -> comparative visual analysis",
+        "hook": "A compact study using satellite imagery + Google Street View to examine how observational systems construct surveillance.",
+        "featured": false,
+        "order": 31,
+        "gallery": [
+          "/projects/observation-apparatus/01.jpg",
+          "/projects/observation-apparatus/02.jpg",
+          "/projects/observation-apparatus/03.jpg",
+          "/projects/observation-apparatus/04.jpg",
+          "/projects/observation-apparatus/05.jpg",
+          "/projects/observation-apparatus/06.jpg"
+        ],
+        "body": {
+          "raw": "\n## Overview\n\nAn in-progress study combining satellite imagery and street-level imagery to examine how observational systems construct surveillance.\n\n## Notes\n\n- Combined satellite imagery and street-level imagery (Google Street View) to explore how observational apparatuses operate as surveillance systems.\n- Focus: how scale, vantage point, and infrastructure shape what becomes legible and governable.\n- This will be presented as an exhibition piece; images will be added later.\n\n## Media (coming soon)\n\nExhibition images and documentation will be added after the first presentation.\n",
+          "code": "var Component=(()=>{var d=Object.create;var n=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),j=(t,e)=>{for(var r in e)n(t,r,{get:e[r],enumerable:!0})},o=(t,e,r,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of m(e))!v.call(t,s)&&s!==r&&n(t,s,{get:()=>e[s],enumerable:!(i=h(e,s))||i.enumerable});return t};var y=(t,e,r)=>(r=t!=null?d(g(t)):{},o(e||!t||!t.__esModule?n(r,\"default\",{value:t,enumerable:!0}):r,t)),w=t=>o(n({},\"__esModule\",{value:!0}),t);var c=b((_,l)=>{l.exports=_jsx_runtime});var S={};j(S,{default:()=>u,frontmatter:()=>x});var a=y(c()),x={title:\"Observation Apparatus - Satellite & Street-Level Vision Study (In Progress)\",slug:\"observation-apparatus\",kind:\"installation\",year:\"2025\",role:\"Artist / Researcher\",themes:[\"Surveillance\",\"Image Theory\",\"Public Space\"],tags:[\"Satellite Imagery\",\"Street View\",\"Observation\",\"Visual Culture\"],hook:\"A compact study using satellite imagery + Google Street View to examine how observational systems construct surveillance.\",heroMetric:\"Satellite + Street View -> comparative visual analysis\",featured:!1,order:31,gallery:[\"/projects/observation-apparatus/01.jpg\",\"/projects/observation-apparatus/02.jpg\",\"/projects/observation-apparatus/03.jpg\",\"/projects/observation-apparatus/04.jpg\",\"/projects/observation-apparatus/05.jpg\",\"/projects/observation-apparatus/06.jpg\"]};function p(t){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,a.jsx)(e.p,{children:\"An in-progress study combining satellite imagery and street-level imagery to examine how observational systems construct surveillance.\"}),`\n`,(0,a.jsx)(e.h2,{children:\"Notes\"}),`\n`,(0,a.jsxs)(e.ul,{children:[`\n`,(0,a.jsx)(e.li,{children:\"Combined satellite imagery and street-level imagery (Google Street View) to explore how observational apparatuses operate as surveillance systems.\"}),`\n`,(0,a.jsx)(e.li,{children:\"Focus: how scale, vantage point, and infrastructure shape what becomes legible and governable.\"}),`\n`,(0,a.jsx)(e.li,{children:\"This will be presented as an exhibition piece; images will be added later.\"}),`\n`]}),`\n`,(0,a.jsx)(e.h2,{children:\"Media (coming soon)\"}),`\n`,(0,a.jsx)(e.p,{children:\"Exhibition images and documentation will be added after the first presentation.\"})]})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,a.jsx)(e,{...t,children:(0,a.jsx)(p,{...t})}):p(t)}return w(S);})();\n;return Component;"
+        },
+        "_id": "projects/observation-apparatus.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/observation-apparatus.mdx",
+          "sourceFileName": "observation-apparatus.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/observation-apparatus"
+        },
+        "type": "Project",
+        "url": "/projects/observation-apparatus"
+      },
+      "documentHash": "1767720116352",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/opuntia.mdx": {
+      "document": {
+        "title": "Opuntia – Solar-Powered Environmental Sensing Station",
+        "slug": "opuntia",
+        "kind": "research",
+        "year": "2024",
+        "role": "Designer & builder – hardware, sensing, and logging",
+        "themes": [
+          "Embodied Perception & Sensor Fusion"
+        ],
+        "tags": [
+          "IoT",
+          "ESP32-C3",
+          "environmental-sensing",
+          "solar-power"
+        ],
+        "heroMetric": "Solar-powered · multi-sensor telemetry",
+        "hook": "A long-running environmental station for logging and visualizing environmental change.",
+        "featured": false,
+        "order": 3,
+        "coverImage": "/projects/opuntia/cover.jpg",
+        "gallery": [
+          "/projects/opuntia/01.jpg",
+          "/projects/opuntia/02.jpg",
+          "/projects/opuntia/03.jpg",
+          "/projects/opuntia/04.jpg"
+        ],
+        "links": {
+          "github": "https://github.com/opuntia-cc",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\r\n\r\n## Problem & Motivation\r\n\r\nLong-term ecological sensing and sensor-driven art installations are often constrained by power, communications reliability, and timestamp integrity in outdoor deployments. Opuntia was built to demonstrate that a compact, solar-powered station can reliably collect, backfill, and serve environmental telemetry (temperature, humidity, pressure, soil moisture, UV) to a web dashboard for weeks without human intervention. This project was developed during an IoT course as a practical research prototype. :contentReference[oaicite:3]{index=3}\r\n\r\n## Approach & System Overview\r\n\r\nOpuntia emphasizes robustness and autonomy rather than experimental novelty: hardware and software are designed around a strict power budget, reliable timekeeping, and outage recovery.\r\n\r\n- **Hardware:** ESP32-C3 microcontroller, BME280 (temp/humidity/pressure), soil-moisture probe, UV sensor, solar charging circuit with Li-ion battery and BMS.\r\n- **Power strategy:** Duty-cycle the MCU and radio (wake, read, transmit, sleep) to minimize energy use; use the RTC to preserve timestamps across deep sleep.\r\n- **Connectivity & backend:** Wi-Fi to a local router; Node.js/Express API writing to MongoDB for time-series logging and an interactive React + D3 dashboard.\r\n\r\n## Key Technical Decisions\r\n\r\n- Reliable timestamps are essential: the firmware compares RTC time vs. expected wake intervals and marks/backfills missing samples on reconnect to preserve continuity.\r\n- Duty cycling and conservative sensor polling (hourly by default) balanced data fidelity and battery life; the power system was sized to survive multi-day cloudy periods.\r\n- Backend uses a document store (MongoDB) to allow flexible, schema-light time-series logging and easy prototyping of front-end visualizations.\r\n\r\n## Evaluation & Results\r\n\r\n- **Field test (30 days):** The station recorded hourly readings with no downtime; battery remained in safe operating range through cloudy intervals.\r\n- **Sensor accuracy:** Compared to a lab reference, the BME280 readings were within acceptable error bounds (within about 5% for humidity/temperature in the test period).\r\n- **Web access:** Dashboard successfully retrieved hourly updates and supported historical queries and visualization.\r\n\r\n(High-level results summarized from project notes and course write-up.) :contentReference[oaicite:4]{index=4}\r\n\r\n## My Contribution\r\n\r\n- Designed the power system and duty-cycling strategy for reliable off-grid operation.\r\n- Wrote ESP32 firmware (Arduino/C++) to handle sensor reads, RTC-based wake/sleep, and robust transmission with reconnect/backfill logic.\r\n- Built the backend API and the React/D3 dashboard for live and historical visualization.\r\n- Led the field deployment and validation tests.\r\n\r\n## Outcomes & Next Steps\r\n\r\n- Opuntia demonstrates practical autonomy for sensor-driven installations and ecological art. Next steps include adding OTA updates, encrypted telemetry, and optional cellular failover for remote deployments.\r\n",
+          "code": "var Component=(()=>{var h=Object.create;var o=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),f=(t,e)=>{for(var r in e)o(t,r,{get:e[r],enumerable:!0})},s=(t,e,r,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!y.call(t,i)&&i!==r&&o(t,i,{get:()=>e[i],enumerable:!(a=p(e,i))||a.enumerable});return t};var v=(t,e,r)=>(r=t!=null?h(g(t)):{},s(e||!t||!t.__esModule?o(r,\"default\",{value:t,enumerable:!0}):r,t)),w=t=>s(o({},\"__esModule\",{value:!0}),t);var d=b((C,l)=>{l.exports=_jsx_runtime});var x={};f(x,{default:()=>u,frontmatter:()=>j});var n=v(d()),j={title:\"Opuntia \\u2013 Solar-Powered Environmental Sensing Station\",slug:\"opuntia\",kind:\"research\",year:\"2024\",role:\"Designer & builder \\u2013 hardware, sensing, and logging\",themes:[\"Embodied Perception & Sensor Fusion\"],tags:[\"IoT\",\"ESP32-C3\",\"environmental-sensing\",\"solar-power\"],heroMetric:\"Solar-powered \\xB7 multi-sensor telemetry\",hook:\"A long-running environmental station for logging and visualizing environmental change.\",featured:!1,order:3,links:{github:\"https://github.com/opuntia-cc\"},coverImage:\"/projects/opuntia/cover.jpg\",gallery:[\"/projects/opuntia/01.jpg\",\"/projects/opuntia/02.jpg\",\"/projects/opuntia/03.jpg\",\"/projects/opuntia/04.jpg\"]};function c(t){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Problem & Motivation\"}),`\n`,(0,n.jsxs)(e.p,{children:[\"Long-term ecological sensing and sensor-driven art installations are often constrained by power, communications reliability, and timestamp integrity in outdoor deployments. Opuntia was built to demonstrate that a compact, solar-powered station can reliably collect, backfill, and serve environmental telemetry (temperature, humidity, pressure, soil moisture, UV) to a web dashboard for weeks without human intervention. This project was developed during an IoT course as a practical research prototype. :contentReference[oaicite:3]\",index=3]}),`\n`,(0,n.jsx)(e.h2,{children:\"Approach & System Overview\"}),`\n`,(0,n.jsx)(e.p,{children:\"Opuntia emphasizes robustness and autonomy rather than experimental novelty: hardware and software are designed around a strict power budget, reliable timekeeping, and outage recovery.\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Hardware:\"}),\" ESP32-C3 microcontroller, BME280 (temp/humidity/pressure), soil-moisture probe, UV sensor, solar charging circuit with Li-ion battery and BMS.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Power strategy:\"}),\" Duty-cycle the MCU and radio (wake, read, transmit, sleep) to minimize energy use; use the RTC to preserve timestamps across deep sleep.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Connectivity & backend:\"}),\" Wi-Fi to a local router; Node.js/Express API writing to MongoDB for time-series logging and an interactive React + D3 dashboard.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Key Technical Decisions\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Reliable timestamps are essential: the firmware compares RTC time vs. expected wake intervals and marks/backfills missing samples on reconnect to preserve continuity.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Duty cycling and conservative sensor polling (hourly by default) balanced data fidelity and battery life; the power system was sized to survive multi-day cloudy periods.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Backend uses a document store (MongoDB) to allow flexible, schema-light time-series logging and easy prototyping of front-end visualizations.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Evaluation & Results\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Field test (30 days):\"}),\" The station recorded hourly readings with no downtime; battery remained in safe operating range through cloudy intervals.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Sensor accuracy:\"}),\" Compared to a lab reference, the BME280 readings were within acceptable error bounds (within about 5% for humidity/temperature in the test period).\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Web access:\"}),\" Dashboard successfully retrieved hourly updates and supported historical queries and visualization.\"]}),`\n`]}),`\n`,(0,n.jsxs)(e.p,{children:[\"(High-level results summarized from project notes and course write-up.) :contentReference[oaicite:4]\",index=4]}),`\n`,(0,n.jsx)(e.h2,{children:\"My Contribution\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Designed the power system and duty-cycling strategy for reliable off-grid operation.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Wrote ESP32 firmware (Arduino/C++) to handle sensor reads, RTC-based wake/sleep, and robust transmission with reconnect/backfill logic.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Built the backend API and the React/D3 dashboard for live and historical visualization.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Led the field deployment and validation tests.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Outcomes & Next Steps\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Opuntia demonstrates practical autonomy for sensor-driven installations and ecological art. Next steps include adding OTA updates, encrypted telemetry, and optional cellular failover for remote deployments.\"}),`\n`]})]})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(c,{...t})}):c(t)}return w(x);})();\n;return Component;"
+        },
+        "_id": "projects/opuntia.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/opuntia.mdx",
+          "sourceFileName": "opuntia.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/opuntia"
+        },
+        "type": "Project",
+        "url": "/projects/opuntia"
+      },
+      "documentHash": "1767720116354",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/siren-diffusion.mdx": {
+      "document": {
+        "title": "SIREN & Diffusion Experiments",
+        "slug": "siren-diffusion",
+        "kind": "experiment",
+        "year": "2024",
+        "role": "Researcher – model training and evaluation",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "SIREN",
+          "diffusion-models",
+          "generative",
+          "implicit-representations"
+        ],
+        "heroMetric": "Small-scale experiments on learned representations and generative quality",
+        "hook": "Experiments with SIREN-based implicit representations and diffusion models.",
+        "featured": false,
+        "order": 6,
+        "gallery": [],
+        "pdf": "/projects/siren-diffusion/Assignment_3.pdf",
+        "body": {
+          "raw": "\n\n## Overview\n\nTwo parallel experiments: reproducing SIREN implicit neural representations at high resolution and building diffusion-model sketches (DCGAN → Progressive GAN → diffusion) to study latent trajectories and editability. These exercises were part of coursework and self-directed research to gain intuition about continuous signal representations and modern generative priors. :contentReference[oaicite:11]{index=11}\n\n## SIREN (Implicit Representations)\n\n- Implemented sinusoidal representation networks (SIREN) to encode images at 1024×1024 resolution.\n- Explored positional encodings and activation scaling to stabilize training.\n- Observed excellent reconstruction fidelity for textures and high-frequency detail compared to baseline MLPs.\n\n## Diffusion & GAN Experiments\n\n- Re-implemented course assignments: DCGAN, Progressive GAN, and a basic diffusion pipeline on curated datasets.\n- Performed latent interpolations and denoising trajectories to understand mode coverage and sample diversity.\n- Benchmarked training behavior on an A100 and profiled memory/perf trade-offs to inform future model decisions.\n\n## Outcomes\n\n- The experiments improved practical know-how around model instabilities, training curricula for generative models, and how implicit representations can be integrated into larger graphics/vision pipelines (e.g., for texture compression or controllable editing in Happenstance / To Wilt).\n",
+          "code": "var Component=(()=>{var u=Object.create;var o=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var h=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),v=(n,e)=>{for(var t in e)o(n,t,{get:e[t],enumerable:!0})},a=(n,e,t,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of f(e))!g.call(n,r)&&r!==t&&o(n,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return n};var b=(n,e,t)=>(t=n!=null?u(h(n)):{},a(e||!n||!n.__esModule?o(t,\"default\",{value:n,enumerable:!0}):t,n)),N=n=>a(o({},\"__esModule\",{value:!0}),n);var d=x((R,l)=>{l.exports=_jsx_runtime});var y={};v(y,{default:()=>p,frontmatter:()=>w});var i=b(d()),w={title:\"SIREN & Diffusion Experiments\",slug:\"siren-diffusion\",kind:\"experiment\",year:\"2024\",role:\"Researcher \\u2013 model training and evaluation\",themes:[\"AI & Computational Media\"],tags:[\"SIREN\",\"diffusion-models\",\"generative\",\"implicit-representations\"],heroMetric:\"Small-scale experiments on learned representations and generative quality\",hook:\"Experiments with SIREN-based implicit representations and diffusion models.\",featured:!1,order:6,gallery:[],pdf:\"/projects/siren-diffusion/Assignment_3.pdf\"};function c(n){let e={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...n.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,i.jsxs)(e.p,{children:[\"Two parallel experiments: reproducing SIREN implicit neural representations at high resolution and building diffusion-model sketches (DCGAN \\u2192 Progressive GAN \\u2192 diffusion) to study latent trajectories and editability. These exercises were part of coursework and self-directed research to gain intuition about continuous signal representations and modern generative priors. :contentReference[oaicite:11]\",index=11]}),`\n`,(0,i.jsx)(e.h2,{children:\"SIREN (Implicit Representations)\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"Implemented sinusoidal representation networks (SIREN) to encode images at 1024\\xD71024 resolution.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Explored positional encodings and activation scaling to stabilize training.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Observed excellent reconstruction fidelity for textures and high-frequency detail compared to baseline MLPs.\"}),`\n`]}),`\n`,(0,i.jsx)(e.h2,{children:\"Diffusion & GAN Experiments\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"Re-implemented course assignments: DCGAN, Progressive GAN, and a basic diffusion pipeline on curated datasets.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Performed latent interpolations and denoising trajectories to understand mode coverage and sample diversity.\"}),`\n`,(0,i.jsx)(e.li,{children:\"Benchmarked training behavior on an A100 and profiled memory/perf trade-offs to inform future model decisions.\"}),`\n`]}),`\n`,(0,i.jsx)(e.h2,{children:\"Outcomes\"}),`\n`,(0,i.jsxs)(e.ul,{children:[`\n`,(0,i.jsx)(e.li,{children:\"The experiments improved practical know-how around model instabilities, training curricula for generative models, and how implicit representations can be integrated into larger graphics/vision pipelines (e.g., for texture compression or controllable editing in Happenstance / To Wilt).\"}),`\n`]})]})}function p(n={}){let{wrapper:e}=n.components||{};return e?(0,i.jsx)(e,{...n,children:(0,i.jsx)(c,{...n})}):c(n)}return N(y);})();\n;return Component;"
+        },
+        "_id": "projects/siren-diffusion.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/siren-diffusion.mdx",
+          "sourceFileName": "siren-diffusion.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/siren-diffusion"
+        },
+        "type": "Project",
+        "url": "/projects/siren-diffusion"
+      },
+      "documentHash": "1767720116354",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/tft-finance.mdx": {
+      "document": {
+        "title": "Temporal Fusion Transformers for Financial Forecasting",
+        "slug": "tft-finance",
+        "kind": "experiment",
+        "year": "2024",
+        "role": "Co-lead – modeling and data pipeline",
+        "themes": [
+          "Temporal Models & Sequences"
+        ],
+        "tags": [
+          "time-series",
+          "temporal-fusion-transformer",
+          "finance",
+          "deep-learning"
+        ],
+        "heroMetric": "Exploratory forecasting on S&P 500 and related series",
+        "hook": "Experiments with Temporal Fusion Transformers on financial time-series data.",
+        "featured": false,
+        "order": 5,
+        "gallery": [],
+        "pdf": "/projects/tft-finance/EEE_598_Deep_Learning___Final_Project_report__Copy_.pdf",
+        "links": {
+          "github": "https://github.com/samufrank/sp500-tft-forecasting",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\r\n\r\n## Project Context\r\n\r\nDeveloped as the final project for a graduate Deep Learning course, this effort applied Temporal Fusion Transformers (TFT) to S&P 500 forecasting using a mixed-frequency pipeline that combined daily price data with lower-frequency macroeconomic indicators. The goal was to investigate whether TFT's attention and gating mechanisms improve multi-horizon forecasting relative to LSTM baselines and to explore interpretability via attention weights. \r\n\r\n## Approach & System Overview\r\n\r\n- **Data pipeline:** Collected daily S&P prices (Yahoo Finance) and monthly/quarterly macro indicators (FRED). Designed alignment and imputation to handle mixed frequencies and avoid lookahead bias.\r\n- **Models implemented:** TFT (primary) and LSTM (baseline) implemented in PyTorch Lightning; training on GPU with time-series cross-validation splits.\r\n- **Architectural twist:** Experimented with separate embeddings for endogenous (price series) vs. exogenous (macro indicators) inputs to improve feature specialization.\r\n\r\n## Key Technical Points\r\n\r\n- Carefully handled time alignment: for each forecast horizon we limited use of \"known future\" features to only those legitimately available at forecast time.\r\n- Used attention weight visualizations to surface which inputs the model relied on for different horizons (e.g., interest rates for mid-horizon).\r\n- Logged experiments and results with TensorBoard and structured model checkpoints.\r\n\r\n## Results & Takeaways\r\n\r\n- TFT provided modest improvements (~5% RMSE improvement over tuned LSTM baselines) in the tested windows; TFT training incurred higher compute/time costs but offered improved interpretability via attention heatmaps.\r\n- Ablation showed that removing macroeconomic exogenous features increased error noticeably (~~10% in some splits), suggesting their value for multi-horizon forecasting.\r\n- These results are course-level exploratory findings and illustrate competence with modern temporal architectures and disciplined experimental practice in constrained timelines. :contentReference[oaicite:8]{index=8}\r\n\r\n## My Contribution\r\n\r\n- Led the data engineering: multi-source ingestion, alignment, and preprocessing.\r\n- Implemented the TFT and LSTM training loops, evaluation metrics, and ablation experiments.\r\n- Produced attention visualizations and draft report/presentation for the course.\r\n\r\n## Next Steps\r\n\r\n- Extend the setup to include higher-frequency real-time indicators, perform more robust cross-validation, and explore physically informed priors for improved generalization in volatile regimes.\r\n",
+          "code": "var Component=(()=>{var m=Object.create;var o=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var T=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),v=(i,e)=>{for(var t in e)o(i,t,{get:e[t],enumerable:!0})},s=(i,e,t,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of u(e))!g.call(i,r)&&r!==t&&o(i,r,{get:()=>e[r],enumerable:!(a=p(e,r))||a.enumerable});return i};var x=(i,e,t)=>(t=i!=null?m(f(i)):{},s(e||!i||!i.__esModule?o(t,\"default\",{value:i,enumerable:!0}):t,i)),y=i=>s(o({},\"__esModule\",{value:!0}),i);var d=T((F,l)=>{l.exports=_jsx_runtime});var _={};v(_,{default:()=>h,frontmatter:()=>w});var n=x(d()),w={title:\"Temporal Fusion Transformers for Financial Forecasting\",slug:\"tft-finance\",kind:\"experiment\",year:\"2024\",role:\"Co-lead \\u2013 modeling and data pipeline\",themes:[\"Temporal Models & Sequences\"],tags:[\"time-series\",\"temporal-fusion-transformer\",\"finance\",\"deep-learning\"],heroMetric:\"Exploratory forecasting on S&P 500 and related series\",hook:\"Experiments with Temporal Fusion Transformers on financial time-series data.\",featured:!1,order:5,links:{github:\"https://github.com/samufrank/sp500-tft-forecasting\"},gallery:[],pdf:\"/projects/tft-finance/EEE_598_Deep_Learning___Final_Project_report__Copy_.pdf\"};function c(i){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Project Context\"}),`\n`,(0,n.jsx)(e.p,{children:\"Developed as the final project for a graduate Deep Learning course, this effort applied Temporal Fusion Transformers (TFT) to S&P 500 forecasting using a mixed-frequency pipeline that combined daily price data with lower-frequency macroeconomic indicators. The goal was to investigate whether TFT's attention and gating mechanisms improve multi-horizon forecasting relative to LSTM baselines and to explore interpretability via attention weights.\"}),`\n`,(0,n.jsx)(e.h2,{children:\"Approach & System Overview\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Data pipeline:\"}),\" Collected daily S&P prices (Yahoo Finance) and monthly/quarterly macro indicators (FRED). Designed alignment and imputation to handle mixed frequencies and avoid lookahead bias.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Models implemented:\"}),\" TFT (primary) and LSTM (baseline) implemented in PyTorch Lightning; training on GPU with time-series cross-validation splits.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Architectural twist:\"}),\" Experimented with separate embeddings for endogenous (price series) vs. exogenous (macro indicators) inputs to improve feature specialization.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Key Technical Points\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:'Carefully handled time alignment: for each forecast horizon we limited use of \"known future\" features to only those legitimately available at forecast time.'}),`\n`,(0,n.jsx)(e.li,{children:\"Used attention weight visualizations to surface which inputs the model relied on for different horizons (e.g., interest rates for mid-horizon).\"}),`\n`,(0,n.jsx)(e.li,{children:\"Logged experiments and results with TensorBoard and structured model checkpoints.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Results & Takeaways\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"TFT provided modest improvements (~5% RMSE improvement over tuned LSTM baselines) in the tested windows; TFT training incurred higher compute/time costs but offered improved interpretability via attention heatmaps.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Ablation showed that removing macroeconomic exogenous features increased error noticeably (~~10% in some splits), suggesting their value for multi-horizon forecasting.\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"These results are course-level exploratory findings and illustrate competence with modern temporal architectures and disciplined experimental practice in constrained timelines. :contentReference[oaicite:8]\",index=8]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"My Contribution\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Led the data engineering: multi-source ingestion, alignment, and preprocessing.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Implemented the TFT and LSTM training loops, evaluation metrics, and ablation experiments.\"}),`\n`,(0,n.jsx)(e.li,{children:\"Produced attention visualizations and draft report/presentation for the course.\"}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Next Steps\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Extend the setup to include higher-frequency real-time indicators, perform more robust cross-validation, and explore physically informed priors for improved generalization in volatile regimes.\"}),`\n`]})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(c,{...i})}):c(i)}return y(_);})();\n;return Component;"
+        },
+        "_id": "projects/tft-finance.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/tft-finance.mdx",
+          "sourceFileName": "tft-finance.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/tft-finance"
+        },
+        "type": "Project",
+        "url": "/projects/tft-finance"
+      },
+      "documentHash": "1767720116355",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/to-wilt-motionglb.mdx": {
+      "document": {
+        "title": "To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB",
+        "slug": "to-wilt-motionglb",
+        "kind": "installation",
+        "year": "2025",
+        "role": "Artist / Researcher (data capture + pipeline)",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "time-lapse",
+          "motionglb",
+          "dataset",
+          "temporal-modeling"
+        ],
+        "heroMetric": "22k+ images | 4 synchronized Sony cameras | 7 days",
+        "hook": "Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.",
+        "featured": false,
+        "order": 5,
+        "coverImage": "/projects/to-wilt-motionglb/cover.jpg",
+        "gallery": [
+          "/projects/to-wilt-motionglb/01.jpg",
+          "/projects/to-wilt-motionglb/02.jpg",
+          "/projects/to-wilt-motionglb/03.jpg",
+          "/projects/to-wilt-motionglb/04.jpg",
+          "/projects/to-wilt-motionglb/05.jpg"
+        ],
+        "links": {
+          "github": "https://github.com/tejaswigowda/motionGLB",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\n## Overview\n\nA focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\n\n## Pipeline\n\n- Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\n- Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\n- Automated background removal in Photoshop via scripting, isolating the rose across frames.\n- Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\n",
+          "code": "var Component=(()=>{var p=Object.create;var a=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var w=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),f=(e,t)=>{for(var i in t)a(e,i,{get:t[i],enumerable:!0})},r=(e,t,i,l)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let n of h(t))!j.call(e,n)&&n!==i&&a(e,n,{get:()=>t[n],enumerable:!(l=g(t,n))||l.enumerable});return e};var b=(e,t,i)=>(i=e!=null?p(u(e)):{},r(t||!e||!e.__esModule?a(i,\"default\",{value:e,enumerable:!0}):i,e)),y=e=>r(a({},\"__esModule\",{value:!0}),e);var c=w((L,s)=>{s.exports=_jsx_runtime});var x={};f(x,{default:()=>d,frontmatter:()=>M});var o=b(c()),M={title:\"To Wilt - Multi-Camera Rose Decay Time-Lapse + MotionGLB\",slug:\"to-wilt-motionglb\",kind:\"installation\",year:\"2025\",role:\"Artist / Researcher (data capture + pipeline)\",themes:[\"AI & Computational Media\"],tags:[\"time-lapse\",\"motionglb\",\"dataset\",\"temporal-modeling\"],hook:\"Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.\",heroMetric:\"22k+ images | 4 synchronized Sony cameras | 7 days\",featured:!1,order:5,links:{github:\"https://github.com/tejaswigowda/motionGLB\"},coverImage:\"/projects/to-wilt-motionglb/cover.jpg\",gallery:[\"/projects/to-wilt-motionglb/01.jpg\",\"/projects/to-wilt-motionglb/02.jpg\",\"/projects/to-wilt-motionglb/03.jpg\",\"/projects/to-wilt-motionglb/04.jpg\",\"/projects/to-wilt-motionglb/05.jpg\"]};function m(e){let t={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...e.components};return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(t.h2,{children:\"Overview\"}),`\n`,(0,o.jsx)(t.p,{children:\"A focused installation study that pairs a multi-camera time-lapse dataset with a MotionGLB pipeline to explore temporal modeling of organic decay.\"}),`\n`,(0,o.jsx)(t.h2,{children:\"Pipeline\"}),`\n`,(0,o.jsxs)(t.ul,{children:[`\n`,(0,o.jsx)(t.li,{children:\"Captured a week-long synchronized time-lapse of a rose wilting using 4 Sony cameras.\"}),`\n`,(0,o.jsx)(t.li,{children:\"Produced a dataset (22k+ images) for a temporal model of wilting dynamics.\"}),`\n`,(0,o.jsx)(t.li,{children:\"Automated background removal in Photoshop via scripting, isolating the rose across frames.\"}),`\n`,(0,o.jsx)(t.li,{children:\"Ran the dataset through Microsoft's Trillions model to generate web-based MotionGLB outputs.\"}),`\n`]})]})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,o.jsx)(t,{...e,children:(0,o.jsx)(m,{...e})}):m(e)}return y(x);})();\n;return Component;"
+        },
+        "_id": "projects/to-wilt-motionglb.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/to-wilt-motionglb.mdx",
+          "sourceFileName": "to-wilt-motionglb.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/to-wilt-motionglb"
+        },
+        "type": "Project",
+        "url": "/projects/to-wilt-motionglb"
+      },
+      "documentHash": "1767720116355",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/to-wilt.mdx": {
+      "document": {
+        "title": "To Wilt – MFA Thesis Installation",
+        "slug": "to-wilt",
+        "kind": "installation",
+        "year": "2024",
+        "role": "Artist–researcher; concept, systems, and installation",
+        "themes": [
+          "AI & Computational Media"
+        ],
+        "tags": [
+          "LLM",
+          "installation",
+          "sensor-fusion",
+          "media-art"
+        ],
+        "hook": "Four-space AI-driven installation about love, decay, and environmental change.",
+        "featured": true,
+        "order": 4,
+        "gallery": [],
+        "links": {
+          "github": "https://github.com/Danyal-0-1/LLMs-dialogue.git",
+          "type": "ProjectLinks",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "\n\n## Concept & Research Question\n\n_To Wilt_ is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.\n\n## Space 1 – Rose Growth & Voices\n\nA multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM “voices” –\na philosopher, a neuroscientist, and a lover – speak over the images, each framing emotion and perception\nfrom a different angle.\n\n## Space 2 – Printed Dialogue\n\nTwo LLM “lovers” converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.\n\n## Space 3 – Decay Dataset\n\nA self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the “decay of feelings” and memory.\n\n## Space 4 – Instrumented Rose Tank\n\nA large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.\n\n## Technical Notes\n\nThe installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.\n\n## Reflections\n\n_To Wilt_ extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.\n",
+          "code": "var Component=(()=>{var m=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var a in e)i(n,a,{get:e[a],enumerable:!0})},r=(n,e,a,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of g(e))!v.call(n,o)&&o!==a&&i(n,o,{get:()=>e[o],enumerable:!(s=p(e,o))||s.enumerable});return n};var w=(n,e,a)=>(a=n!=null?m(u(n)):{},r(e||!n||!n.__esModule?i(a,\"default\",{value:n,enumerable:!0}):a,n)),b=n=>r(i({},\"__esModule\",{value:!0}),n);var l=f((T,c)=>{c.exports=_jsx_runtime});var L={};y(L,{default:()=>h,frontmatter:()=>x});var t=w(l()),x={title:\"To Wilt \\u2013 MFA Thesis Installation\",slug:\"to-wilt\",kind:\"installation\",year:\"2024\",role:\"Artist\\u2013researcher; concept, systems, and installation\",themes:[\"AI & Computational Media\"],tags:[\"LLM\",\"installation\",\"sensor-fusion\",\"media-art\"],hook:\"Four-space AI-driven installation about love, decay, and environmental change.\",featured:!0,order:4,links:{github:\"https://github.com/Danyal-0-1/LLMs-dialogue.git\"},gallery:[]};function d(n){let e={em:\"em\",h2:\"h2\",p:\"p\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Concept & Research Question\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` is a four-space installation that asks how large language models, environmental sensing, and\nmoving images can be woven together to think about love, decay, and the passage of time. The work combines\nmodel-to-model dialogue, long-term image sequences, and live sensor data.`]}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 1 \\u2013 Rose Growth & Voices\"}),`\n`,(0,t.jsx)(e.p,{children:`A multi-screen video wall shows a 3D rose growth animation as a central visual motif. Three LLM \\u201Cvoices\\u201D \\u2013\na philosopher, a neuroscientist, and a lover \\u2013 speak over the images, each framing emotion and perception\nfrom a different angle.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 2 \\u2013 Printed Dialogue\"}),`\n`,(0,t.jsx)(e.p,{children:`Two LLM \\u201Clovers\\u201D converse continuously on a webpage. Two networked dot-matrix printers, driven by\nRaspberry Pi, print their dialogue in real time. Visitors encounter the text as physical traces that\naccumulate over the course of the show.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 3 \\u2013 Decay Dataset\"}),`\n`,(0,t.jsx)(e.p,{children:`A self-captured dataset of thousands of images records the decay of organic material. These frames are\nmorphed over time and paired with LLM commentary reflecting on the \\u201Cdecay of feelings\\u201D and memory.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Space 4 \\u2013 Instrumented Rose Tank\"}),`\n`,(0,t.jsx)(e.p,{children:`A large rose tank is instrumented with environmental sensors (temperature, humidity, etc.) that log\nconditions and print periodic measurements. LLM voices respond to changes in the environment, treating\nsensor readings as evidence in an evolving emotional narrative.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Technical Notes\"}),`\n`,(0,t.jsx)(e.p,{children:`The installation ties together scripted LLM prompts and responses, Raspberry Pi devices, environmental\nsensors, and custom software for logging, scheduling, and projection. It treats AI systems not as black-box\noracles but as collaborators in an extended media ecosystem.`}),`\n`,(0,t.jsx)(e.h2,{children:\"Reflections\"}),`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:\"To Wilt\"}),` extends my broader research interest in computational media: how AI systems, sensing devices, and\nimages can be composed to examine perception, attachment, and loss over time.`]})]})}function h(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(d,{...n})}):d(n)}return b(L);})();\n;return Component;"
+        },
+        "_id": "projects/to-wilt.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/to-wilt.mdx",
+          "sourceFileName": "to-wilt.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/to-wilt"
+        },
+        "type": "Project",
+        "url": "/projects/to-wilt"
+      },
+      "documentHash": "1767720116356",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    },
+    "projects/vision-representation.mdx": {
+      "document": {
+        "title": "Vision & Representation Experiments",
+        "slug": "vision-representation",
+        "kind": "experiment",
+        "year": "2024",
+        "role": "Researcher – model design and analysis",
+        "themes": [
+          "Vision & Representation"
+        ],
+        "tags": [
+          "efficientnet",
+          "vision-transformer",
+          "resnet",
+          "representation-learning"
+        ],
+        "heroMetric": "Comparative experiments across modern vision backbones",
+        "hook": "Course and lab experiments exploring modern vision backbones and representation learning.",
+        "featured": false,
+        "order": 7,
+        "gallery": [],
+        "body": {
+          "raw": "\n\n## Overview\n\nA set of supervised and self-supervised style experiments executed as part of a deep learning curriculum and self-directed study. The goal was to compare architectures (EfficientNet, ViT, custom ResNet) under controlled augmentation and compute budgets, and to explore interpretability methods (Grad-CAM) and perceptual loss variants for downstream image tasks. :contentReference[oaicite:9]{index=9}\n\n## Representative Experiments\n\n- **EfficientNetV2 fine-tuning:** Fine-tuned on Oxford Flowers-102 with custom augmentations and multi-GPU training; validated class-balance strategies and augmentation schedules.\n- **ViT & Representational Probes:** Trained ViT-B32 on a domain-specific PV-fault dataset, compared head-only vs full-finetune methods.\n- **ResNet-36 & custom activations:** Implemented a ResNet-36 from scratch, experimented with an analytic custom activation and benchmarked against ReLU baselines.\n- **Interpretability:** Generated Grad-CAM maps to inspect class discriminative regions and evaluate whether features align with human-perceptible cues.\n\n## Outcomes\n\n- Demonstrated practical knowledge of end-to-end vision pipelines (dataset curation → augmentation → multi-GPU training → evaluation).\n- Gained fluency in model selection trade-offs, fine-tuning strategies, and basic interpretability techniques useful for downstream research and production prototypes. :contentReference[oaicite:10]{index=10}\n\n## Notes\n\nThese experiments are compact and reproducible; they serve as methodological building blocks for larger perception projects (e.g., Mesquite MoCap visual fusion, Happenstance).\n",
+          "code": "var Component=(()=>{var p=Object.create;var a=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},o=(t,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of h(e))!g.call(t,r)&&r!==i&&a(t,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return t};var b=(t,e,i)=>(i=t!=null?p(f(t)):{},o(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),y=t=>o(a({},\"__esModule\",{value:!0}),t);var c=x((M,l)=>{l.exports=_jsx_runtime});var R={};v(R,{default:()=>u,frontmatter:()=>w});var n=b(c()),w={title:\"Vision & Representation Experiments\",slug:\"vision-representation\",kind:\"experiment\",year:\"2024\",role:\"Researcher \\u2013 model design and analysis\",themes:[\"Vision & Representation\"],tags:[\"efficientnet\",\"vision-transformer\",\"resnet\",\"representation-learning\"],heroMetric:\"Comparative experiments across modern vision backbones\",hook:\"Course and lab experiments exploring modern vision backbones and representation learning.\",featured:!1,order:7,gallery:[]};function d(t){let e={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h2,{children:\"Overview\"}),`\n`,(0,n.jsxs)(e.p,{children:[\"A set of supervised and self-supervised style experiments executed as part of a deep learning curriculum and self-directed study. The goal was to compare architectures (EfficientNet, ViT, custom ResNet) under controlled augmentation and compute budgets, and to explore interpretability methods (Grad-CAM) and perceptual loss variants for downstream image tasks. :contentReference[oaicite:9]\",index=9]}),`\n`,(0,n.jsx)(e.h2,{children:\"Representative Experiments\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"EfficientNetV2 fine-tuning:\"}),\" Fine-tuned on Oxford Flowers-102 with custom augmentations and multi-GPU training; validated class-balance strategies and augmentation schedules.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"ViT & Representational Probes:\"}),\" Trained ViT-B32 on a domain-specific PV-fault dataset, compared head-only vs full-finetune methods.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"ResNet-36 & custom activations:\"}),\" Implemented a ResNet-36 from scratch, experimented with an analytic custom activation and benchmarked against ReLU baselines.\"]}),`\n`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:\"Interpretability:\"}),\" Generated Grad-CAM maps to inspect class discriminative regions and evaluate whether features align with human-perceptible cues.\"]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Outcomes\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Demonstrated practical knowledge of end-to-end vision pipelines (dataset curation \\u2192 augmentation \\u2192 multi-GPU training \\u2192 evaluation).\"}),`\n`,(0,n.jsxs)(e.li,{children:[\"Gained fluency in model selection trade-offs, fine-tuning strategies, and basic interpretability techniques useful for downstream research and production prototypes. :contentReference[oaicite:10]\",index=10]}),`\n`]}),`\n`,(0,n.jsx)(e.h2,{children:\"Notes\"}),`\n`,(0,n.jsx)(e.p,{children:\"These experiments are compact and reproducible; they serve as methodological building blocks for larger perception projects (e.g., Mesquite MoCap visual fusion, Happenstance).\"})]})}function u(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(d,{...t})}):d(t)}return y(R);})();\n;return Component;"
+        },
+        "_id": "projects/vision-representation.mdx",
+        "_raw": {
+          "sourceFilePath": "projects/vision-representation.mdx",
+          "sourceFileName": "vision-representation.mdx",
+          "sourceFileDir": "projects",
+          "contentType": "mdx",
+          "flattenedPath": "projects/vision-representation"
+        },
+        "type": "Project",
+        "url": "/projects/vision-representation"
+      },
+      "documentHash": "1767720116357",
+      "hasWarnings": false,
+      "documentTypeName": "Project"
+    }
+  }
+}

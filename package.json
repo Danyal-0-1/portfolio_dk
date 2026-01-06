@@ -6,7 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:media": "node scripts/syncProjectMedia.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
@@ -22,6 +23,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
