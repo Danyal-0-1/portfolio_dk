@@ -30,7 +30,7 @@ export const Project = defineDocumentType(() => ({
     year: { type: "string", required: true },
     role: { type: "string", required: true },
 
-    // Safer defaults so docs don’t get skipped if empty/missing
+    // safer: avoid skipping if missing
     themes: { type: "list", of: { type: "string" }, required: false, default: [] },
     tags: { type: "list", of: { type: "string" }, required: false, default: [] },
 
@@ -38,12 +38,8 @@ export const Project = defineDocumentType(() => ({
     hook: { type: "string", required: false },
     featured: { type: "boolean", default: false },
     order: { type: "number", required: false },
-    coverImage: { type: "string", required: false },
-    gallery: { type: "list", of: { type: "string" }, required: false, default: [] },
-    video: { type: "string", required: false },
-    pdf: { type: "string", required: false },
 
-    // ✅ Correct nested field
+    // ✅ correct nested usage
     links: { type: "nested", of: ProjectLinks, required: false },
   },
   computedFields: {
