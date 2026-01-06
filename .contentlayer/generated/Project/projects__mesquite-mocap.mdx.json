@@ -19,6 +19,7 @@
   "hook": "Open-source, wireless full-body 6-DoF motion capture using low-cost IMU nodes.",
   "featured": true,
   "order": 1,
+  "gallery": [],
   "links": {
     "github": "https://github.com/Mesquite-Mocap/mesquite.cc",
     "paper": "https://arxiv.org/abs/2512.22690",

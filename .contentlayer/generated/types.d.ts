@@ -24,6 +24,10 @@ export type Project = {
   hook?: string | undefined
   featured: boolean
   order?: number | undefined
+  coverImage?: string | undefined
+  gallery: string[]
+  video?: string | undefined
+  pdf?: string | undefined
   links?: ProjectLinks | undefined
   /** MDX file body */
   body: MDX

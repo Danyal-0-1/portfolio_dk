@@ -12,19 +12,21 @@ export default function PublicationsPage() {
 
   <ul className="list-disc pl-4 text-sm space-y-2">
     <li>
+      Vanani, P., Patel, D., <strong>Khorami, D.</strong>, et&nbsp;al.{" "}
       <a
         href="https://arxiv.org/abs/2512.22690"
         target="_blank"
         rel="noopener noreferrer"
         className="underline underline-offset-2 hover:opacity-80"
       >
-        Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable,
-        Open-Source, Networked IMU Hardware and WebXR
-      </a>
-      . (co-author, submitted to IEEE Journal of IoT; arXiv:2512.22690).
+        “Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Open-Source,
+        Networked IMU Hardware and WebXR.”
+      </a>{" "}
+      <em>arXiv</em>:2512.22690 (cs.MM, cs.CV), 2025. Submitted to <em>IEEE Internet of Things Journal</em>.
     </li>
   </ul>
 </section>
+
 
 
       <section className="section pt-0">
