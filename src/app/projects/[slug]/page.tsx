@@ -5,10 +5,7 @@ import { getProjectBySlug } from "@/lib/projects";
 import { MDXContent } from "@/components/mdx-content";
 import { ProjectLinks, type ProjectLinkMap } from "@/components/project-links";
 import { MediaGallery } from "@/components/MediaGallery";
-import {
-  resolveProjectMedia,
-  type ProjectMediaOverrides,
-} from "@/lib/project-media";
+import { resolveProjectMedia } from "@/lib/project-media";
 
 // for generateStaticParams – still fine to use allProjects here
 export async function generateStaticParams() {
@@ -32,13 +29,7 @@ export default async function ProjectPage({
 
   const links = (project as { links?: ProjectLinkMap }).links;
   const hasLinks = Boolean(links && Object.values(links).some(Boolean));
-  const mediaOverrides = project as ProjectMediaOverrides;
-  const media = resolveProjectMedia(project.slug, {
-    coverImage: mediaOverrides.coverImage,
-    gallery: mediaOverrides.gallery,
-    video: mediaOverrides.video,
-    pdf: mediaOverrides.pdf,
-  });
+  const media = resolveProjectMedia(project.slug);
   const items: Array<{ type: "image" | "video"; src: string; alt?: string }> =
     [];
 
@@ -60,11 +51,15 @@ export default async function ProjectPage({
 
   return (
     <article className="prose prose-sm sm:prose-base dark:prose-invert max-w-none">
-      {items.length > 0 && (
-        <div className="not-prose mb-8">
+      <div className="not-prose mb-8">
+        {items.length > 0 ? (
           <MediaGallery items={items} />
-        </div>
-      )}
+        ) : (
+          <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-800 dark:bg-slate-900/50">
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900" />
+          </div>
+        )}
+      </div>
       <header className="mb-6">
         <span className="badge mb-3 inline-block">
           {project.kind === "research"

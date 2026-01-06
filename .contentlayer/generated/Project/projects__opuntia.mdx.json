@@ -17,7 +17,6 @@
   "hook": "A long-running environmental station for logging and visualizing environmental change.",
   "featured": false,
   "order": 3,
-  "gallery": [],
   "links": {
     "github": "https://github.com/opuntia-cc",
     "type": "ProjectLinks",

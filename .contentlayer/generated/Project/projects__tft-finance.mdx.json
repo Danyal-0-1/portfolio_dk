@@ -17,7 +17,6 @@
   "hook": "Experiments with Temporal Fusion Transformers on financial time-series data.",
   "featured": false,
   "order": 5,
-  "gallery": [],
   "links": {
     "github": "https://github.com/samufrank/sp500-tft-forecasting",
     "type": "ProjectLinks",

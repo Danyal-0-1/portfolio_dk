@@ -1,6 +1,6 @@
 import { getProjectsByKind } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
-import { resolveProjectMedia, type ProjectMediaOverrides } from "@/lib/project-media";
+import { resolveProjectMedia } from "@/lib/project-media";
 import type { Project } from "contentlayer/generated";
 
 export default function ProjectsPage() {
@@ -15,13 +15,7 @@ export default function ProjectsPage() {
   };
 
   const getCoverImage = (project: Project) => {
-    const overrides = project as ProjectMediaOverrides;
-    return resolveProjectMedia(project.slug, {
-      coverImage: overrides.coverImage,
-      gallery: overrides.gallery,
-      video: overrides.video,
-      pdf: overrides.pdf,
-    }).coverImage;
+    return resolveProjectMedia(project.slug).coverImage;
   };
 
   return (

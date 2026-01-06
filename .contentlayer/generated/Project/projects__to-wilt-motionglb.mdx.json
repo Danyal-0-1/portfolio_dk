@@ -17,7 +17,6 @@
   "hook": "Week-long 4-camera time-lapse dataset + MotionGLB outputs for modeling rose wilting.",
   "featured": false,
   "order": 5,
-  "gallery": [],
   "links": {
     "github": "https://github.com/tejaswigowda/motionGLB",
     "type": "ProjectLinks",

@@ -16,7 +16,6 @@
   "hook": "Four-space AI-driven installation about love, decay, and environmental change.",
   "featured": true,
   "order": 4,
-  "gallery": [],
   "links": {
     "github": "https://github.com/Danyal-0-1/LLMs-dialogue.git",
     "type": "ProjectLinks",
