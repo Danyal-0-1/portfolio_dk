@@ -38,11 +38,11 @@ export default async function ProjectPage({
   }
 
   if (media.gallery.length > 0) {
-    media.gallery.forEach((src, index) => {
+    media.gallery.forEach((image) => {
       items.push({
         type: "image",
-        src,
-        alt: `${project.title} gallery image ${index + 1}`,
+        src: image.src,
+        alt: image.alt,
       });
     });
   } else if (media.coverImage) {

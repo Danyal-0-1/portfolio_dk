@@ -3,23 +3,102 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 
+type ProjectGalleryImage = {
+  src: string;
+  alt: string;
+};
+
 export type ProjectMedia = {
   coverImage?: string;
-  gallery: string[];
+  gallery: ProjectGalleryImage[];
   video?: string;
   pdf?: string;
 };
 
 const coverCandidates = ["cover.webp", "cover.jpg", "cover.png"];
 const videoCandidates = ["video.mp4", "demo.mp4"];
-const galleryPattern = /^(\d{2})\.(webp|png|jpe?g)$/i;
+const imageExtensions = new Set([
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".webp",
+  ".gif",
+  ".avif",
+  ".svg",
+]);
+const naturalComparator = new Intl.Collator(undefined, {
+  numeric: true,
+  sensitivity: "base",
+});
+
+type MediaFile = {
+  relativePath: string;
+  baseNameLower: string;
+};
+
+function collectFilesRecursively(
+  directory: string,
+  relativePrefix = "",
+): MediaFile[] {
+  const entries = fs.readdirSync(path.join(directory, relativePrefix), {
+    withFileTypes: true,
+  });
+  const files: MediaFile[] = [];
+
+  for (const entry of entries) {
+    const nextRelativePath = relativePrefix
+      ? path.join(relativePrefix, entry.name)
+      : entry.name;
+
+    if (entry.isDirectory()) {
+      files.push(...collectFilesRecursively(directory, nextRelativePath));
+      continue;
+    }
+
+    if (!entry.isFile()) {
+      continue;
+    }
+
+    files.push({
+      relativePath: nextRelativePath,
+      baseNameLower: entry.name.toLowerCase(),
+    });
+  }
+
+  return files;
+}
+
+function toProjectUrl(slug: string, relativePath: string): string {
+  const normalizedPath = relativePath.split(path.sep).join("/");
+  const encodedPath = normalizedPath
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+  return `/projects/${slug}/${encodedPath}`;
+}
+
+function toImageAltText(relativePath: string): string {
+  const extension = path.extname(relativePath);
+  const baseName = path.basename(relativePath, extension);
+  const normalized = baseName
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+
+  if (!normalized) {
+    return "Project image";
+  }
+
+  return normalized.charAt(0).toUpperCase() + normalized.slice(1);
+}
 
 export function resolveProjectMedia(slug: string): ProjectMedia {
   const mediaDir = path.join(process.cwd(), "public", "projects", slug);
-  let files: string[] = [];
+  let files: MediaFile[] = [];
 
   try {
-    files = fs.readdirSync(mediaDir);
+    files = collectFilesRecursively(mediaDir);
   } catch {
     return {
       coverImage: undefined,
@@ -29,13 +108,16 @@ export function resolveProjectMedia(slug: string): ProjectMedia {
     };
   }
 
-  const fileMap = new Map(files.map((file) => [file.toLowerCase(), file]));
+  const naturalSortFiles = (a: MediaFile, b: MediaFile) =>
+    naturalComparator.compare(a.relativePath, b.relativePath);
 
   const resolveCandidate = (candidates: string[]) => {
     for (const candidate of candidates) {
-      const match = fileMap.get(candidate);
+      const match = files
+        .filter((file) => file.baseNameLower === candidate)
+        .sort(naturalSortFiles)[0];
       if (match) {
-        return `/projects/${slug}/${match}`;
+        return toProjectUrl(slug, match.relativePath);
       }
     }
     return undefined;
@@ -46,21 +128,30 @@ export function resolveProjectMedia(slug: string): ProjectMedia {
   const inferredVideo = resolveCandidate(videoCandidates);
 
   const pdfFile = files
-    .filter((file) => file.toLowerCase().endsWith(".pdf"))
-    .sort()[0];
-  const inferredPdf = pdfFile ? `/projects/${slug}/${pdfFile}` : undefined;
+    .filter((file) => file.relativePath.toLowerCase().endsWith(".pdf"))
+    .sort(naturalSortFiles)[0];
+  const inferredPdf = pdfFile
+    ? toProjectUrl(slug, pdfFile.relativePath)
+    : undefined;
+  const seenGallery = new Set<string>();
 
   const inferredGallery = files
-    .map((file) => {
-      const match = galleryPattern.exec(file);
-      if (!match) return null;
-      return { file, order: Number(match[1]) };
-    })
-    .filter((entry): entry is { file: string; order: number } => Boolean(entry))
-    .sort((a, b) => a.order - b.order)
-    .map((entry) => `/projects/${slug}/${entry.file}`);
+    .filter((file) =>
+      imageExtensions.has(path.extname(file.relativePath).toLowerCase()),
+    )
+    .sort(naturalSortFiles)
+    .map((file) => ({
+      src: toProjectUrl(slug, file.relativePath),
+      alt: toImageAltText(file.relativePath),
+    }))
+    .filter((image) => {
+      const imageKey = image.src.toLowerCase();
+      if (seenGallery.has(imageKey)) return false;
+      seenGallery.add(imageKey);
+      return true;
+    });
 
-  const coverImage = inferredCover ?? inferredGallery[0];
+  const coverImage = inferredCover ?? inferredGallery[0]?.src;
 
   return {
     coverImage,
